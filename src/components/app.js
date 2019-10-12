@@ -7,7 +7,6 @@ import Header from './header';
 // Code-splitting is automated for routes
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
-import Profile from '../routes/profile';
 
 const App = () => {
   /** Gets fired when the route changes.
