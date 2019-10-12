@@ -1,5 +1,7 @@
 .root {
   color: white;
+  height: 100%;
+  overflow: hidden;
 }
 
 .heroImage {
@@ -12,9 +14,16 @@
   background-size: cover;
 }
 
+.title {
+  font-size: 3rem;
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
 .daysToGo {
+  z-index: 1;
   font-size: 12rem;
-  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  text-shadow: 0 0 40px rgba(0,0,0,0.4);
 }
 
 .backToOverview {
