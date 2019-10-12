@@ -1,9 +1,9 @@
-import { h } from 'preact'
-import style from './style'
-import { useAuth } from '../../hooks/useAuth'
+import { h } from 'preact';
+import style from './style';
+import { useAuth } from '../../hooks/useAuth';
 
 const Login = () => {
-  const auth = useAuth()
+  const auth = useAuth();
   return (
     <div class={style.home}>
       {auth.user ? (
@@ -17,7 +17,7 @@ const Login = () => {
         <button onClick={() => auth.signin()}>Sign in with Google</button>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
