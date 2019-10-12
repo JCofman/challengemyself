@@ -6,20 +6,18 @@ import 'firebase/auth';
 
 // Add your Firebase credentials
 
-if (typeof window !== 'undefined') {
-  firebase.initializeApp({
-    apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
-    authDomain: 'challengemyself-f65a8.firebaseapp.com',
-    databaseURL: 'https://challengemyself-f65a8.firebaseio.com',
-    projectId: 'challengemyself-f65a8',
-    storageBucket: 'challengemyself-f65a8.appspot.com',
-    messagingSenderId: '905777837799',
-    appId: '1:905777837799:web:8af8c94b236c7974821442',
-    measurementId: 'G-GWQ066XZVK',
-  });
-  const googleProvider = new firebase.auth.GoogleAuthProvider();
-  const authContext = createContext();
-}
+firebase.initializeApp({
+  apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
+  authDomain: 'challengemyself-f65a8.firebaseapp.com',
+  databaseURL: 'https://challengemyself-f65a8.firebaseio.com',
+  projectId: 'challengemyself-f65a8',
+  storageBucket: 'challengemyself-f65a8.appspot.com',
+  messagingSenderId: '905777837799',
+  appId: '1:905777837799:web:8af8c94b236c7974821442',
+  measurementId: 'G-GWQ066XZVK',
+});
+const googleProvider = new firebase.auth.GoogleAuthProvider();
+const authContext = createContext();
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useAuth().
