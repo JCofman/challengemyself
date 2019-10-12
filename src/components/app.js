@@ -1,5 +1,6 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 import { Router } from 'preact-router';
+import { ProvideAuth } from '../hooks/useAuth';
 
 import Header from './header';
 
@@ -7,26 +8,28 @@ import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 
-export default class App extends Component {
-	
+const App = () => {
+
 	/** Gets fired when the route changes.
 	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
 	 *	@param {string} event.url	The newly routed URL
 	 */
-	handleRoute = e => {
+	const handleRoute = e => {
 		this.currentUrl = e.url;
 	};
 
-	render() {
-		return (
-			<div id="app">
+	return (
+		<div id="app">
+			<ProvideAuth>
 				<Header />
-				<Router onChange={this.handleRoute}>
+				<Router onChange={handleRoute}>
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
 				</Router>
-			</div>
-		);
-	}
-}
+			</ProvideAuth>
+		</div>
+	);
+};
+
+export default App;
