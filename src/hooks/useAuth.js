@@ -17,7 +17,7 @@ firebase.initializeApp({
   measurementId: 'G-GWQ066XZVK',
 });
 const googleProvider = new firebase.auth.GoogleAuthProvider();
-const authContext = createContext();
+const authContext = createContext(null);
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useAuth().
