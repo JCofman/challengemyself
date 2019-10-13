@@ -16,7 +16,7 @@ const CreateChallenge = () => {
 
   return (
     <div class={style.root}>
-      <form onSubmit={submitChallenge}>
+      <form onSubmit={submitChallenge} class={style.form}>
         <div
           style={{
             display: 'flex',
@@ -24,30 +24,35 @@ const CreateChallenge = () => {
             'align-items': 'center',
           }}
         >
-          <label for="name">Your next challenge</label>
+          <label for="name" class={style.label}>
+            Your next challenge
+          </label>
           <input
             id="name"
             type="text"
             value={name}
+            onchange={e => setName(e.target.value)}
             required
             aria-label="challenge-name"
-            class={style.title}
+            class={style.input}
           />
 
-          <label for="duration">Duration: {duration}</label>
+          <label for="duration" class={style.label}>
+            Duration: {duration}
+          </label>
           <input
             id="duration"
             type="number"
             min="5"
             max="365"
             value={duration}
-            required
             onchange={e => setDuration(e.target.value)}
+            required
             aria-label="challenge-duration"
-            class={style.duration}
+            class={style.input}
           />
 
-          <button type="submit" class={style.createButton}>
+          <button type="submit" class={`${style.input} ${style.createButton}`}>
             Create Challenge
           </button>
         </div>

@@ -9,7 +9,9 @@ const Header = () => {
   console.log(auth.user);
   return (
     <header class={style.header}>
-      <h1>Preact App</h1>
+      <Link href="/">
+        <h1>Challenge Myself</h1>
+      </Link>
       <nav
         style={{
           display: 'flex',

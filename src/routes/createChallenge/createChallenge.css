@@ -8,16 +8,15 @@
   font-size: 1.2rem;
 }
 
-form {
+.form {
   width: 250px;
 }
 
-label {
+.label {
   margin-bottom: 0.25rem;
 }
 
-input,
-button {
+.input {
   width: 100%;
   padding: 0.75rem;
   font-size: 0.75rem;
@@ -28,14 +27,17 @@ button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.duration {
-}
-
 .createButton {
   margin-top: 2rem;
   margin-bottom: 0;
   color: white;
   background-color: hsl(35, 100%, 55%);
   font-weight: 800;
+  transition: transform 0.2s;
   cursor: pointer;
+}
+
+.createButton:hover {
+  transform: scale(1.05);
+  background-color: hsl(35, 100%, 65%);
 }
