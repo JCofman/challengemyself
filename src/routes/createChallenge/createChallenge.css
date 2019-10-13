@@ -4,6 +4,38 @@
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  color: hotpink;
-  font-size: 1.5rem;
+  color: hsl(35, 100%, 55%);
+  font-size: 1.2rem;
+}
+
+form {
+  width: 250px;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border-style: unset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.duration {
+}
+
+.createButton {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: white;
+  background-color: hsl(35, 100%, 55%);
+  font-weight: 800;
+  cursor: pointer;
 }
