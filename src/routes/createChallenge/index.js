@@ -1,15 +1,17 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
+import { route } from 'preact-router';
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
   const [name, setName] = useState('');
-  const [from, setFrom] = useState(new Date());
   const [duration, setDuration] = useState(100);
 
   const submitChallenge = () => {
-    console.log('create Challenge');
-    if (window) window.location.assign('trex');
+    // TODO: save name and duration in firebase!
+
+    // redirect to created challenge
+    route(`/${name}`);
   };
 
   return (

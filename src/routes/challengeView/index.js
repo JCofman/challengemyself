@@ -1,38 +1,34 @@
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import style from './challengeView.css';
-import fallbackImg from '../../assets/fallback-image.jpeg';
+import fallbackImgUrl from '../../assets/fallback-image.jpeg';
 
 const ChallengeView = () => {
-  const [imgUrl, setImgUrl] = useState(fallbackImg);
+  const [imgUrl, setImgUrl] = useState('');
 
   const clientId =
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
-  const imagesQuery = window.location.pathname.slice(1) || 'trex'; // because it starts with /
+  const imagesQuery = window.location.pathname.slice(1); // because it starts with /
   const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${imagesQuery}`;
 
-  useEffect(
-    () => {
-      // TODO: fetch image from firebase of unsplash
-      fetch(unsplashUrl)
-        .then(response => response.json())
-        .then(json => json.urls.regular)
-        .then(picUrl => {
-          console.log('url', picUrl);
-          setImgUrl(picUrl);
-        });
-    },
-    e => {
-      console.error(e);
-    },
-    [unsplashUrl]
-  );
+  useEffect(() => {
+    // TODO: fetch name and days remaining
+
+    // fetch bg image
+    fetch(unsplashUrl)
+      .then(response => response.json())
+      .then(json => json.urls.regular)
+      .then(picUrl => {
+        console.log('your pic url!', imagesQuery, picUrl);
+        setImgUrl(picUrl);
+      });
+  }, [unsplashUrl]);
 
   return (
     <div class={style.root}>
       <div
         class={style.heroImage}
-        style={{ 'background-image': `url('${imgUrl}')` }}
+        style={{ 'background-image': `url('${imgUrl || fallbackImgUrl}')` }}
       />
       <div
         style={{
@@ -53,7 +49,7 @@ const ChallengeView = () => {
           height: '100%',
         }}
       >
-        <div class={style.title}>Work hard</div>
+        <div class={style.title}>{imagesQuery.toUpperCase()}</div>
         <div class={style.daysToGo}>78</div>
       </div>
     </div>
