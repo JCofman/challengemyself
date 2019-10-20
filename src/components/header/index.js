@@ -7,7 +7,9 @@ const Header = () => {
   const auth = useAuth();
   return (
     <header class={style.header}>
-      <h1>Preact App</h1>
+      <Link href="/">
+        <h1>Challenge Myself</h1>
+      </Link>
       <nav
         style={{
           display: 'flex',
@@ -17,9 +19,6 @@ const Header = () => {
       >
         <Link activeClassName={style.active} href="/">
           Home
-        </Link>
-        <Link activeClassName={style.active} href="/profile">
-          Me
         </Link>
         {auth.user ? (
           <div

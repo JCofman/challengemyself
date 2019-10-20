@@ -1,0 +1,39 @@
+.root {
+  color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 3rem;
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.daysToGo {
+  z-index: 1;
+  font-size: 12rem;
+  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.backToOverview {
+  transition: all 0.25s;
+  padding: 12px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.backToOverview:hover, .backToOverview:focus {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
