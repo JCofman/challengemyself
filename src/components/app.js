@@ -5,7 +5,8 @@ import { ProvideAuth } from '../hooks/useAuth';
 import Header from './header';
 
 // Code-splitting is automated for routes
-import Home from '../routes/home';
+import CreateChallenge from '../routes/createChallenge';
+import ChallengeView from '../routes/challengeView';
 
 const App = () => {
   /** Gets fired when the route changes.
@@ -21,7 +22,8 @@ const App = () => {
       <ProvideAuth>
         <Header />
         <Router onChange={handleRoute}>
-          <Home path="/" />
+          <CreateChallenge path="/" />
+          <ChallengeView path="/:id" />
         </Router>
       </ProvideAuth>
     </div>

@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  color: hsl(35, 100%, 55%);
+  font-size: 1.2rem;
+}
+
+.form {
+  width: 250px;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border-style: unset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.createButton {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: white;
+  background-color: hsl(35, 100%, 55%);
+  font-weight: 800;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.createButton:hover {
+  transform: scale(1.05);
+  background-color: hsl(35, 100%, 65%);
+}
