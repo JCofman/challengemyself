@@ -1,6 +1,8 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
+import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
+
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
@@ -9,7 +11,14 @@ const CreateChallenge = () => {
 
   const submitChallenge = () => {
     // TODO: save name and duration in firebase!
-
+    let ref = firebase.database().ref('/challenges');
+    let newChallenge = ref.push();
+    // Pushing an object to firebase with a random number
+    newChallenge.set({
+      name: name,
+      duration: duration,
+      startDate: new Date(),
+    });
     // redirect to created challenge
     route(`/${name}`);
   };
@@ -52,7 +61,13 @@ const CreateChallenge = () => {
             class={style.input}
           />
 
-          <button type="submit" class={`${style.input} ${style.createButton}`}>
+          <button
+            type="submit"
+            onClick={() => {
+              submitChallenge();
+            }}
+            class={`${style.input} ${style.createButton}`}
+          >
             Create Challenge
           </button>
         </div>
