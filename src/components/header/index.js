@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { Link } from 'preact-router/match';
 
 import { useAuth } from '../../hooks/useAuth';
@@ -6,7 +5,6 @@ import style from './style';
 
 const Header = () => {
   const auth = useAuth();
-  console.log(auth.user);
   return (
     <header class={style.header}>
       <h1>Preact App</h1>

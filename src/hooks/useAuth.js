@@ -1,23 +1,30 @@
 // Hook (use-auth.js)
-import { h, createContext } from 'preact';
+
+import { createContext } from 'preact';
 import { useState, useEffect, useContext } from 'preact/hooks';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/database';
 
 // Add your Firebase credentials
 
-firebase.initializeApp({
-  apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
-  authDomain: 'challengemyself-f65a8.firebaseapp.com',
-  databaseURL: 'https://challengemyself-f65a8.firebaseio.com',
-  projectId: 'challengemyself-f65a8',
-  storageBucket: 'challengemyself-f65a8.appspot.com',
-  messagingSenderId: '905777837799',
-  appId: '1:905777837799:web:8af8c94b236c7974821442',
-  measurementId: 'G-GWQ066XZVK',
-});
-const googleProvider = new firebase.auth.GoogleAuthProvider();
-const authContext = createContext(null);
+let googleProvider;
+let authContext;
+if (typeof window !== 'undefined') {
+  firebase.initializeApp({
+    apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
+    authDomain: 'challengemyself-f65a8.firebaseapp.com',
+    databaseURL: 'https://challengemyself-f65a8.firebaseio.com',
+    projectId: 'challengemyself-f65a8',
+    storageBucket: 'challengemyself-f65a8.appspot.com',
+    messagingSenderId: '905777837799',
+    appId: '1:905777837799:web:8af8c94b236c7974821442',
+    measurementId: 'G-GWQ066XZVK',
+  });
+
+  googleProvider = new firebase.auth.GoogleAuthProvider();
+  authContext = createContext();
+}
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useAuth().
@@ -111,3 +118,5 @@ function useProvideAuth() {
     signInWithGoogle,
   };
 }
+
+export default firebase;
