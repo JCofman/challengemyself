@@ -23,7 +23,7 @@ if (typeof window !== 'undefined') {
   });
 
   googleProvider = new firebase.auth.GoogleAuthProvider();
-  authContext = createContext();
+  authContext = createContext(null);
 }
 
 // Provider component that wraps your app and makes auth object ...
