@@ -22,8 +22,10 @@ const CreateChallenge = () => {
       duration: duration,
       startDate: startDate,
     });
+    const key = newChallenge.key;
+    console.log(`${userID}/challenges/${newChallenge.key}`);
     // redirect to created challenge
-    route(`/${name}`);
+    route(`/${userID}/challenges/${newChallenge.key}`);
   };
 
   return (

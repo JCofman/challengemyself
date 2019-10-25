@@ -23,7 +23,7 @@ const App = () => {
         <Header />
         <Router>
           <CreateChallenge path="/" />
-          <ChallengeView path="/:id" />
+          <ChallengeView path="/:userId/challenges/:challengeId" />
         </Router>
       </ProvideAuth>
     </div>

@@ -1,25 +1,30 @@
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
+import {useDatabaseEntry} from '../../hooks/useDatabaseEntry';
 import style from './challengeView.css';
 import fallbackImgUrl from '../../assets/fallback-image.jpeg';
 
-const ChallengeView = () => {
-  const [imgUrl, setImgUrl] = useState('');
 
-  const clientId =
-    '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
-  const imagesQuery = window.location.pathname.slice(1); // because it starts with /
-  const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${imagesQuery}`;
+const calcDaysToGo = (duration, createdTimestamp) => {
+  const today = new Date().getTime();
+  const difInDays = Math.floor((today - createdTimestamp) / 1000 / 60 / 60 / 24);
+  return duration - difInDays;
+};
+
+const ChallengeView = (prop) => {
+  const [imgUrl, setImgUrl] = useState('');
+  const clientId = '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
+  const challengeId = window.location.pathname.slice(1); // because it starts with /
+  const [duration, name, createdDate] = useDatabaseEntry(challengeId);
+  const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
 
   useEffect(() => {
-    // TODO: fetch name and days remaining
-
     // fetch bg image
     fetch(unsplashUrl)
       .then(response => response.json())
       .then(json => json.urls.regular)
       .then(picUrl => {
-        console.log('your pic url!', imagesQuery, picUrl);
+        console.log('your pic url!', name, picUrl);
         setImgUrl(picUrl);
       });
   }, [unsplashUrl]);
@@ -49,8 +54,8 @@ const ChallengeView = () => {
           height: '100%',
         }}
       >
-        <div class={style.title}>{imagesQuery.toUpperCase()}</div>
-        <div class={style.daysToGo}>78</div>
+        <div class={style.title}>{name ? name.toUpperCase() : ''}</div>
+        <div class={style.daysToGo}>{duration && createdDate ? calcDaysToGo(duration, createdDate) : ''}</div>
       </div>
     </div>
   );
