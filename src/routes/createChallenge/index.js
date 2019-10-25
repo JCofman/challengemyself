@@ -1,27 +1,27 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
-import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
+import { useAuth } from '../../hooks/useAuth';
 import firebase from '../../hooks/useAuth';
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
   const [name, setName] = useState('');
   const [duration, setDuration] = useState(100);
+  const auth = useAuth();
 
   const submitChallenge = () => {
     // TODO: save name and duration in firebase!
-    let ref = firebase.database().ref('/challenges');
-    let newChallenge = ref.push();
+    const userID = auth.user.uid;
+    const ref = firebase.database().ref(`${userID}/challenges`);
+    const newChallenge = ref.push();
+    const startDate = new Date().getTime();
     // Pushing an object to firebase with a random number
     newChallenge.set({
       name: name,
       duration: duration,
-      startDate: new Date(),
+      startDate: startDate,
     });
-    console.log(`TCL: ----------------------------------`);
-    console.log(`TCL: submitChallenge -> name`, name);
-    console.log(`TCL: ----------------------------------`);
     // redirect to created challenge
     route(`/${name}`);
   };
