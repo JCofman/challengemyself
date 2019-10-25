@@ -13,15 +13,15 @@ const App = () => {
    *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
    *	@param {string} event.url	The newly routed URL
    */
-  const handleRoute = e => {
-    this.currentUrl = e.url;
-  };
+  // const handleRoute = e => {
+  //   this.currentUrl = e.url;
+  // };
 
   return (
     <div id="app">
       <ProvideAuth>
         <Header />
-        <Router onChange={handleRoute}>
+        <Router>
           <CreateChallenge path="/" />
           <ChallengeView path="/:id" />
         </Router>

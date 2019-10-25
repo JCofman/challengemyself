@@ -2,7 +2,7 @@ import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
-
+import firebase from '../../hooks/useAuth';
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
@@ -19,6 +19,9 @@ const CreateChallenge = () => {
       duration: duration,
       startDate: new Date(),
     });
+    console.log(`TCL: ----------------------------------`);
+    console.log(`TCL: submitChallenge -> name`, name);
+    console.log(`TCL: ----------------------------------`);
     // redirect to created challenge
     route(`/${name}`);
   };
