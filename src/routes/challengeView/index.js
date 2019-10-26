@@ -1,21 +1,15 @@
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
-import {useDatabaseEntry} from '../../hooks/useDatabaseEntry';
+import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
 import style from './challengeView.css';
 import fallbackImgUrl from '../../assets/fallback-image.jpeg';
-
-
-const calcDaysToGo = (duration, createdTimestamp) => {
-  const today = new Date().getTime();
-  const difInDays = Math.floor((today - createdTimestamp) / 1000 / 60 / 60 / 24);
-  return duration - difInDays;
-};
+import { calcDaysToGo } from '../../utils';
 
 const ChallengeView = (prop) => {
   const [imgUrl, setImgUrl] = useState('');
   const clientId = '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
-  const challengeId = window.location.pathname.slice(1); // because it starts with /
-  const [duration, name, createdDate] = useDatabaseEntry(challengeId);
+  const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
+  const [duration, name, createdDate] = useDatabaseEntry(challengeIdUrl);
   const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
 
   useEffect(() => {

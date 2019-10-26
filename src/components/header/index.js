@@ -1,13 +1,23 @@
+import { useState, useEffect } from 'preact/hooks';
 import { Link } from 'preact-router/match';
-
 import { useAuth } from '../../hooks/useAuth';
+
 import style from './style';
+
 
 const Header = () => {
   const auth = useAuth();
+  const [userId, setUserId] = useState('');
+
+  useEffect(() => {
+    if (auth && auth.user) {
+      setUserId(auth.user.uid);
+    }
+  }, [auth]);
+
   return (
     <header class={style.header}>
-      <Link href="/">
+      <Link href={userId ? `/${userId}/challenges` : '/'}>
         <h1>Challenge Myself</h1>
       </Link>
       <nav
@@ -18,7 +28,7 @@ const Header = () => {
         }}
       >
         <Link activeClassName={style.active} href="/">
-          Home
+          Create New
         </Link>
         {auth.user ? (
           <div

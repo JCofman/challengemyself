@@ -1,8 +1,7 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
-import { useAuth } from '../../hooks/useAuth';
-import firebase from '../../hooks/useAuth';
+import firebase, { useAuth } from '../../hooks/useAuth';
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
@@ -11,7 +10,10 @@ const CreateChallenge = () => {
   const auth = useAuth();
 
   const submitChallenge = () => {
-    // TODO: save name and duration in firebase!
+    // validarte inputs
+    if (name === '') return;
+    if (duration > 100 || duration <= 0) return;
+
     const userID = auth.user.uid;
     const ref = firebase.database().ref(`${userID}/challenges`);
     const newChallenge = ref.push();
