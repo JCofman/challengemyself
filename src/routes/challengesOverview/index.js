@@ -13,8 +13,8 @@ const ChallengesOverview = () => {
 
   return (
     <div class={style.root}>
-      <h1>Your Challenges</h1>
-      {allChallenges && Object.entries(allChallenges)
+      <h1 class={style.headline}>Your Challenges</h1>
+      {allChallenges && Object.keys(allChallenges).length > 0 && Object.entries(allChallenges)
         .sort(([key1, c1], [key2, c2]) => c2.startDate - c1.startDate)
         .map(([key, challenge]) => (
           <div key={challenge.name+challenge.startDate} class={style.item}>
@@ -37,7 +37,8 @@ const ChallengesOverview = () => {
           </div>
         ))
       }
-      {!allChallenges && <div>Loading...</div>}
+      {allChallenges && Object.keys(allChallenges).length === 0 && <div>You don't have any challenges yet! Go create one! 💪</div>}
+      {!allChallenges && <div>Loading your challenges...</div>}
     </div>
   );
 }

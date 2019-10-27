@@ -24,8 +24,6 @@ const CreateChallenge = () => {
       duration: duration,
       startDate: startDate,
     });
-    const key = newChallenge.key;
-    console.log(`${userID}/challenges/${newChallenge.key}`);
     // redirect to created challenge
     route(`/${userID}/challenges/${newChallenge.key}`);
   };
@@ -54,13 +52,14 @@ const CreateChallenge = () => {
           />
 
           <label for="duration" class={style.label}>
-            Duration: {duration}
+            Duration
           </label>
           <input
             id="duration"
             type="number"
             min="5"
             max="365"
+            step="1"
             value={duration}
             onchange={e => setDuration(e.target.value)}
             required
@@ -75,7 +74,7 @@ const CreateChallenge = () => {
             }}
             class={`${style.input} ${style.createButton}`}
           >
-            Create Challenge
+            {'Start Challenge today'.toUpperCase()}
           </button>
         </div>
       </form>

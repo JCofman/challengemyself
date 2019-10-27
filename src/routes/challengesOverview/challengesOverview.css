@@ -7,6 +7,10 @@
   border-radius: 6px;
 }
 
+.headline {
+  margin-top: 0;
+}
+
 .item {
   font-size: 16px;
   padding: 8px 0;
