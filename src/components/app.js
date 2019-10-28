@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
 
 import Header from './header';
+import Footer from './footer';
 
 // Code-splitting is automated for routes
 import CreateChallenge from '../routes/createChallenge';
@@ -25,6 +26,7 @@ const App = () => {
           <CreateChallenge path="/" />
           <ChallengeView path="/:id" />
         </Router>
+        <Footer></Footer>
       </ProvideAuth>
     </div>
   );
