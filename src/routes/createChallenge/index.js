@@ -1,8 +1,7 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
-import { useAuth } from '../../hooks/useAuth';
-import firebase from '../../hooks/useAuth';
+import firebase, { useAuth } from '../../hooks/useAuth';
 import style from './createChallenge.css';
 
 const CreateChallenge = () => {
@@ -11,7 +10,10 @@ const CreateChallenge = () => {
   const auth = useAuth();
 
   const submitChallenge = () => {
-    // TODO: save name and duration in firebase!
+    // validarte inputs
+    if (name === '') return;
+    if (duration > 100 || duration <= 0) return;
+
     const userID = auth.user.uid;
     const ref = firebase.database().ref(`${userID}/challenges`);
     const newChallenge = ref.push();
@@ -23,7 +25,7 @@ const CreateChallenge = () => {
       startDate: startDate,
     });
     // redirect to created challenge
-    route(`/${name}`);
+    route(`/${userID}/challenges/${newChallenge.key}`);
   };
 
   return (
@@ -50,13 +52,14 @@ const CreateChallenge = () => {
           />
 
           <label for="duration" class={style.label}>
-            Duration: {duration}
+            Duration
           </label>
           <input
             id="duration"
             type="number"
             min="5"
             max="365"
+            step="1"
             value={duration}
             onchange={e => setDuration(e.target.value)}
             required
@@ -71,7 +74,7 @@ const CreateChallenge = () => {
             }}
             class={`${style.input} ${style.createButton}`}
           >
-            Create Challenge
+            {'Start Challenge today'.toUpperCase()}
           </button>
         </div>
       </form>

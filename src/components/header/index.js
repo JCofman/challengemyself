@@ -1,50 +1,38 @@
+import { useState, useEffect } from 'preact/hooks';
 import { Link } from 'preact-router/match';
-
 import { useAuth } from '../../hooks/useAuth';
+
 import style from './style';
+
 
 const Header = () => {
   const auth = useAuth();
+  const [userId, setUserId] = useState('');
+
+  useEffect(() => {
+    if (auth && auth.user) {
+      setUserId(auth.user.uid);
+    }
+  }, [auth]);
+
   return (
     <header class={style.header}>
-      <Link href="/">
+      <Link href={userId ? `/${userId}/challenges` : '/'} class={style.title}>
         <h1>Challenge Myself</h1>
       </Link>
-      <nav
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <Link activeClassName={style.active} href="/">
-          Home
-        </Link>
+      <nav class={style.nav}>
         {auth.user ? (
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: 'black',
-                color: 'white',
-                borderRadius: '50%',
-                width: '50px',
-                height: '50px',
-              }}
-            >
-              {auth.user.displayName}{' '}
-            </div>
-            <button onClick={() => auth.signout()}>Sign out</button>
-          </div>
+          <>
+            <Link class={style.createNew} activeClassName={style.active} href="/">
+              +
+            </Link>
+            <div class={style.user} style={{ backgroundImage: `url('${auth.user.photoURL}')`}}></div>
+            <Link class={style.login} onClick={() => auth.signout()}>Sign out</Link>
+          </>
         ) : (
-          <button onClick={() => auth.signInWithGoogle()}>
+          <Link class={style.login} onClick={() => auth.signInWithGoogle()}>
             Sign in with Google
-          </button>
+          </Link>
         )}
       </nav>
     </header>

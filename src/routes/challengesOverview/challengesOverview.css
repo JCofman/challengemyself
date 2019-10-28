@@ -1,0 +1,52 @@
+.background {
+  height: 100%;
+  margin: 0 auto;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
+  font-size: 1.2rem;
+  background-color: white;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+}
+
+.root {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  margin-top: 85px;
+  border-radius: 6px;
+}
+.headline {
+  margin-top: 0;
+}
+.item {
+  font-size: 16px;
+  padding: 8px 0;
+}
+.flex {
+  display: flex;
+}
+.name {
+  flex: 0 0 250px;
+}
+.duration {
+  flex: 0 0 75px;
+}
+.start {
+  flex: 0 0 200px;
+}
+.togo {
+  flex: 0 0 200px;
+  font-weight: bold;
+}
+.link {
+  color: rgb(77, 15, 176);
+  text-decoration: transparent;
+}
+.link:hover,
+.link:focus {
+  color: rgb(54, 0, 72);
+}

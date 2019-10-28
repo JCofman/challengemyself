@@ -4,14 +4,15 @@
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  color: hsl(35, 100%, 55%);
+  color: white;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
   font-size: 1.2rem;
   background-color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(https://images.unsplash.com/photo-1509255929945-586a420363cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=3301&q=80);
   background-size: cover;
   overflow: hidden;
   background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
 }
 
 .form {
@@ -44,6 +45,6 @@
 }
 
 .createButton:hover {
-  transform: scale(1.05);
-  background-color: hsl(35, 100%, 65%);
+  transform: scale(1.1);
+  background-color: hsl(35, 95%, 60%);
 }

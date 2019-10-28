@@ -1,13 +1,14 @@
 import { h } from 'preact';
 import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
-
+import style from './app.css';
 import Header from './header';
 import Footer from './footer';
 
 // Code-splitting is automated for routes
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
+import ChallengesOverview from '../routes/challengesOverview';
 
 const App = () => {
   /** Gets fired when the route changes.
@@ -24,7 +25,8 @@ const App = () => {
         <Header />
         <Router>
           <CreateChallenge path="/" />
-          <ChallengeView path="/:id" />
+          <ChallengeView path="/:userId/challenges/:challengeId" />
+          <ChallengesOverview path="/:userId/challenges" />
         </Router>
         <Footer></Footer>
       </ProvideAuth>

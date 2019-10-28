@@ -1,6 +1,3 @@
-import { Link } from 'preact-router/match';
-
-import { useAuth } from '../../hooks/useAuth';
 import style from './style';
 
 const Footer = () => {
@@ -13,7 +10,8 @@ const Footer = () => {
           justifyContent: 'center',
         }}
       >
-        Made with ❤️by <a href="">Daniel</a> and <a href="">Jacob</a>
+        Made with ❤️ by <a href="https://twitter.com/dan_eckelt">Daniel</a> and{' '}
+        <a href="https://twitter.com/JCofman">Jacob</a>
       </div>
     </footer>
   );

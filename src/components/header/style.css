@@ -1,46 +1,77 @@
 .header {
   position: fixed;
   left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 56px;
-  padding: 0;
-  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  z-index: 999999;
 }
 
-.header h1 {
-  float: left;
+.title {
+  color: white;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
   margin: 0;
-  padding: 0 15px;
-  font-size: 24px;
-  line-height: 56px;
-  font-weight: 400;
-  color: #fff;
-}
-
-.header nav {
-  float: right;
-  font-size: 100%;
-}
-
-.header nav a {
-  display: inline-block;
-  height: 56px;
-  line-height: 56px;
-  padding: 0 15px;
-  min-width: 50px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0);
+  font-size: 8px;
+  font-weight: lighter;
   text-decoration: none;
-  color: #fff;
-  will-change: background-color;
 }
 
-.header nav a:hover,
-.header nav a:active {
-  background: rgba(0, 0, 0, 0.2);
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header nav a.active {
-  background: rgba(0, 0, 0, 0.4);
+.user {
+  margin-right: 16px;
+  color: white;
+  background-image: url('https://images.unsplash.com/placeholder-avatars/extra-large.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
+}
+
+.login {
+  color: white;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
+  padding: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.createNew {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: hsl(35, 100%, 55%);
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+.createNew:hover {
+  transform: scale(1.2);
+}
+
+.header nav a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.active {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
