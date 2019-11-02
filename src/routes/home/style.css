@@ -1,5 +1,30 @@
 .home {
   padding: 56px 20px;
+  margin: 0 auto;
   min-height: 100%;
-  width: 100%;
+  width: auto;
+  max-width: 30%;
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.create {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(35, 100%, 55%);
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin: 25px;
+  font-weight: 800;
+  transition: transform 0.2s;
+}
+
+.create:hover {
+  transform: scale(1.1);
+  background-color: hsl(35, 95%, 60%);
 }

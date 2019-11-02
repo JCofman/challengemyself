@@ -4,6 +4,7 @@ import { ProvideAuth } from '../hooks/useAuth';
 import style from './app.css';
 import Header from './header';
 import Footer from './footer';
+import Home from '../routes/home';
 
 // Code-splitting is automated for routes
 import CreateChallenge from '../routes/createChallenge';
@@ -24,7 +25,8 @@ const App = () => {
       <ProvideAuth>
         <Header />
         <Router>
-          <CreateChallenge path="/" />
+          <Home path="/" />
+          <CreateChallenge path="/create" />
           <ChallengeView path="/:userId/challenges/:challengeId" />
           <ChallengesOverview path="/:userId/challenges" />
         </Router>
