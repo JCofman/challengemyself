@@ -5,16 +5,24 @@ import { useAuth } from '../../hooks/useAuth';
 
 import style from './style';
 
-const signout = (e) => {
-  if (auth) {
-    auth.signout();
+const signin = (e) => {
+  if (auth && auth.signInWithGoogle) {
+    auth.signInWithGoogle();
+    route('/create');
   }
-  route('/create');
 }
 
-const Header = () => {
+const signout = (e) => {
+  if (auth && auth.signout) {
+    auth.signout();
+    route('/create');
+  }
+}
+
+const Header = (props) => {
   const auth = useAuth();
   const [userId, setUserId] = useState('');
+  const { currentPath } = props;
 
   useEffect(() => {
     if (auth && auth.user) {
@@ -31,15 +39,17 @@ const Header = () => {
         <h1>Challenge Myself</h1>
       </Link>
       <nav class={style.nav}>
-        {(auth && auth.user && !(location.pathname.includes('create') || location.pathname === '/' )) ? (
+        {(auth && auth.user) ? (
           <>
-            <Link
-              class={style.createNew}
-              activeClassName={style.active}
-              href="/create"
-            >
-              +
-            </Link>
+            {(currentPath && !currentPath.includes('create') && currentPath !== '/') && (
+              <Link
+                class={style.createNew}
+                activeClassName={style.active}
+                href="/create"
+              >
+                +
+              </Link>
+            )}
             <div
               class={style.user}
               style={{ backgroundImage: `url('${auth.user.photoURL}')` }}
@@ -49,7 +59,7 @@ const Header = () => {
             </Link>
           </>
         ) : (
-          <Link class={style.login} onClick={() => auth && auth.signInWithGoogle()}>
+          <Link class={style.login} onClick={signin}>
             Sign in with Google
           </Link>
         )}

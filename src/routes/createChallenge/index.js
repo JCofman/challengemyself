@@ -11,7 +11,7 @@ const CreateChallenge = () => {
 
   const submitChallenge = () => {
     // validarte inputs
-    if (name === '') return;
+    if (name.trim() === '') return;
     if (duration > 100 || duration <= 0) return;
 
     const userID = auth.user.uid;

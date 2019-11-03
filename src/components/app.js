@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { useState } from 'preact/hooks';
 import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
 import style from './app.css';
@@ -12,6 +13,7 @@ import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
 
 const App = () => {
+  const [currentPath, setCurrentPath] = useState('/');
   /** Gets fired when the route changes.
    *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
    *	@param {string} event.url	The newly routed URL
@@ -20,11 +22,15 @@ const App = () => {
   //   this.currentUrl = e.url;
   // };
 
+  const handleRouteChange = async(e) => {
+    setCurrentPath(e.url);
+  }
+
   return (
     <div id="app">
       <ProvideAuth>
-        <Header />
-        <Router>
+        <Header currentPath={currentPath} />
+        <Router onChange={handleRouteChange}>
           <Home path="/" />
           <CreateChallenge path="/create" />
           <ChallengeView path="/:userId/challenges/:challengeId" />
