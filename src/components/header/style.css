@@ -48,22 +48,23 @@
 }
 
 .createNew {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  margin: 25px;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-color: hsl(35, 100%, 55%);
-  border-radius: 50%;
-  transition: transform 0.2s;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	margin: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: hsl(35, 100%, 55%);
+	border-radius: 50%;
+	transition: transform 0.2s;
 }
 .createNew:hover {
   transform: scale(1.2);
