@@ -15,6 +15,7 @@
 }
 
 .challenge {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,27 +24,40 @@
   height: 100%;
 }
 
+.challenge__titleAndDays_Wrapper {
+  position: absolute;
+  padding: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
 .challenge__titleAndDays {
   z-index: 1;
   padding: 20px;
   border: 1px solid white;
-  margin-bottom: 12px;
-  backdrop-filter: blur(4px);
+  margin-bottom: 20px;
+  /* backdrop-filter: blur(4px); */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 .challenge__title {
   z-index: 1;
   font-size: 3rem;
-  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  transform: translateX(-30%) translateY(-20%) translateZ(50px);
 }
 
 .challenge__daysToGo {
   z-index: 1;
   font-size: 12rem;
-  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  transform: translateX(20%) translateZ(50px);
 }
 
 .challenge__backToOverview {
+  position: absolute;
+  bottom: 20%;
   z-index: 1;
   color: white;
   padding: 12px;
