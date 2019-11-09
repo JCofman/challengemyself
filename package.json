@@ -31,7 +31,8 @@
     "firebase": "^7.2.2",
     "preact": "^10.0.2",
     "preact-render-to-string": "^5.1.0",
-    "preact-router": "^3.1.0"
+    "preact-router": "^3.1.0",
+    "vanilla-tilt": "^1.7.0"
   },
   "jest": {
     "preset": "jest-preset-preact"

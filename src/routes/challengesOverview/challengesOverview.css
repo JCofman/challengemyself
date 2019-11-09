@@ -1,16 +1,15 @@
 .background {
   height: 100%;
   margin: 0 auto;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
   font-size: 1.2rem;
+  overflow-y: scroll;
 }
 
 .root {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 20px;
-  margin-top: 85px;
+  margin: 85px 20px;
   border-radius: 6px;
 }
 .headline {
@@ -22,18 +21,23 @@
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .name {
-  flex: 0 0 250px;
+  margin-right: 40px;
+  min-width: 300px;
 }
 .duration {
-  flex: 0 0 75px;
+  margin-right: 40px;
+  min-width: 30px;
 }
 .start {
-  flex: 0 0 200px;
+  margin-right: 40px;
+  min-width: 70px;
 }
 .togo {
-  flex: 0 0 200px;
+  margin-right: 40px;
+  min-width: 30px;
   font-weight: bold;
 }
 .link {

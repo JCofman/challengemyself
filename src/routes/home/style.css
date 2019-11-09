@@ -3,13 +3,21 @@
   margin: 0 auto;
   min-height: 100%;
   width: auto;
-  max-width: 30%;
+  max-width: 500px;
   color: white;
+  font-size: 1.1rem;
+  line-height: 1.5;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  animation: slideDown 0.8s;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-300%) };
+  to { transform: translateY(0) };
 }
 
 .create {
@@ -19,7 +27,7 @@
   background-color: hsl(35, 100%, 55%);
   padding: 0.75rem;
   border-radius: 4px;
-  margin: 25px;
+  margin: 1rem 0.5rem 3rem 0.5rem;
   font-weight: 800;
   transition: transform 0.2s;
 }
@@ -27,4 +35,16 @@
 .create:hover {
   transform: scale(1.1);
   background-color: hsl(35, 95%, 60%);
+}
+
+.login {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.login:hover {
+  border: 1px dashed white;
 }

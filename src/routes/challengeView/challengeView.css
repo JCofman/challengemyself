@@ -12,28 +12,71 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(0.5);
 }
 
-.title {
-  font-size: 3rem;
+.challenge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.challenge__titleAndDays_Wrapper {
+  position: absolute;
+  padding: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.challenge__titleAndDays {
   z-index: 1;
-  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+  padding: 20px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  /* backdrop-filter: blur(4px); */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
-.daysToGo {
+.challenge__title {
+  z-index: 1;
+  font-size: 3rem;
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  transform: translateX(-30%) translateY(-20%) translateZ(50px);
+}
+
+.challenge__daysToGo {
   z-index: 1;
   font-size: 12rem;
-  text-shadow: 0 0 40px rgba(0,0,0,0.4);
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  text-align: right;
+  transform: translateX(20%) translateZ(50px);
 }
 
-.backToOverview {
-  transition: all 0.25s;
-  padding: 12px;
+.challenge__daysToGoDesc {
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  text-align: right;
+  transform: translateY(-20px) translateZ(50px);
+}
+
+.challenge__backToOverview {
+  position: absolute;
+  bottom: 20%;
+  z-index: 1;
   color: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  padding: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.backToOverview:hover, .backToOverview:focus {
+.challenge__backToOverview:hover, .challenge__backToOverview:focus {
   transform: scale(1.2);
-  box-shadow: 0 0 4px rgba(0,0,0,0.8);
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }

@@ -12,9 +12,15 @@
   z-index: 999999;
 }
 
+@media screen and (max-width: 448px) {
+  .header {
+    background-color: rgba(0,0,0,0.75);
+  }
+}
+
 .title {
   color: white;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.468);
   margin: 0;
   font-size: 8px;
   font-weight: lighter;
@@ -39,6 +45,22 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
 }
 
+.user::after {
+  content: 'Your challenges';
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  padding: 4px;
+  border-radius: 4px;
+  bottom: -24px;
+  transform: translateX(-30%);
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.user:hover::after {
+  opacity: 1;
+}
+
 .login {
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
@@ -46,32 +68,40 @@
   font-size: 14px;
   cursor: pointer;
 }
-
-.createNew {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  margin: 25px;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-color: hsl(35, 100%, 55%);
-  border-radius: 50%;
-  transition: transform 0.2s;
-}
-.createNew:hover {
-  transform: scale(1.2);
-}
-
-.header nav a:hover {
+.login:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 .active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.createNew {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	margin: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-color: hsl(35, 100%, 55%);
+	border-radius: 50%;
+  border: 2px solid #747474;
+  backdrop-filter: blur(5px);
+	transition: border 0.4s, transform 0.2s;
+}
+.createNew:hover {
+  transform: scale(1.2);
+  border: 0px solid transparent;
+}
+
+.addIcon {
+  fill: white;
+  width: 16px;
+  height: 16px;
+}
+
+
