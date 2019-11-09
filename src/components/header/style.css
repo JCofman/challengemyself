@@ -45,6 +45,22 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
 }
 
+.user::after {
+  content: 'Your challenges';
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  padding: 4px;
+  border-radius: 4px;
+  bottom: -24px;
+  transform: translateX(-30%);
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.user:hover::after {
+  opacity: 1;
+}
+
 .login {
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
