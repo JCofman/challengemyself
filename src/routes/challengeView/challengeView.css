@@ -12,6 +12,7 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(0.5);
 }
 
 .challenge {
@@ -52,7 +53,15 @@
   z-index: 1;
   font-size: 12rem;
   text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  text-align: right;
   transform: translateX(20%) translateZ(50px);
+}
+
+.challenge__daysToGoDesc {
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  text-align: right;
+  transform: translateY(-20px) translateZ(50px);
 }
 
 .challenge__backToOverview {
@@ -63,11 +72,11 @@
   padding: 12px;
   cursor: pointer;
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .challenge__backToOverview:hover, .challenge__backToOverview:focus {
   transform: scale(1.2);
-  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
