@@ -7,6 +7,12 @@
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
   font-size: 1.2rem;
+  animation: slideDown 0.6s;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-300%) };
+  to { transform: translateY(0) };
 }
 
 .form {

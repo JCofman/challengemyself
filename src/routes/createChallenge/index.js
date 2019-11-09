@@ -9,7 +9,8 @@ const CreateChallenge = () => {
   const [duration, setDuration] = useState(100);
   const auth = useAuth();
 
-  const submitChallenge = () => {
+  const submitChallenge = (e) => {
+    e.preventDefault();
     // validarte inputs
     if (name.trim() === '') return;
     if (duration > 100 || duration <= 0) return;
@@ -47,6 +48,7 @@ const CreateChallenge = () => {
             value={name}
             onchange={e => setName(e.target.value)}
             required
+            pattern="[A-Za-z0-9]{3,20}"
             aria-label="challenge-name"
             class={style.input}
           />

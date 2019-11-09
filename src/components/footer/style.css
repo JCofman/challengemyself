@@ -3,13 +3,29 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 56px;
   padding: 0;
   z-index: 50;
   color: white;
 }
 
-.footer a {
+.madeWith {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 448px) {
+  .madeWith {
+    justify-content: flex-start;
+    padding: 6px 12px;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.link {
   color: hotpink;
   margin: 5px;
 }

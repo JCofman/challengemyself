@@ -18,12 +18,12 @@ const Home = () => {
                 activeClassName={style.active}
                 href="/create"
               >
-                Click here to create a new Challenge
+                Create a new Challenge
               </Link>
-              <button onClick={() => auth.signout()}>Sign out</button>
+              <button class={style.login} onClick={() => auth.signout()}>Sign out</button>
             </div>
           ) : auth && (
-            <button onClick={() => auth.signInWithGoogle()}>Sign in</button>
+            <button class={style.login} onClick={() => auth.signInWithGoogle()}>Sign in</button>
           )}
     </div>
   );

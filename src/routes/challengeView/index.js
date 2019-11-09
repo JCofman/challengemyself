@@ -18,7 +18,6 @@ const ChallengeView = (prop) => {
       .then(response => response.json())
       .then(json => json.urls.regular)
       .then(picUrl => {
-        console.log('your pic url!', name, picUrl);
         setImgUrl(picUrl);
       });
   }, [unsplashUrl]);

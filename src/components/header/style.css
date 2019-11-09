@@ -12,6 +12,12 @@
   z-index: 999999;
 }
 
+@media screen and (max-width: 448px) {
+  .header {
+    background-color: rgba(0,0,0,0.75);
+  }
+}
+
 .title {
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
@@ -46,6 +52,12 @@
   font-size: 14px;
   cursor: pointer;
 }
+.login:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.active {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
 .createNew {
 	position: fixed;
@@ -59,20 +71,21 @@
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	font-size: 20px;
-	font-weight: bold;
-	color: white;
 	background-color: hsl(35, 100%, 55%);
 	border-radius: 50%;
-	transition: transform 0.2s;
+  border: 2px solid #747474;
+  backdrop-filter: blur(5px);
+	transition: border 0.4s, transform 0.2s;
 }
 .createNew:hover {
   transform: scale(1.2);
+  border: 0px solid transparent;
 }
 
-.header nav a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+.addIcon {
+  fill: white;
+  width: 16px;
+  height: 16px;
 }
-.active {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+
+
