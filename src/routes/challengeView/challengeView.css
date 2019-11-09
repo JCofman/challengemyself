@@ -14,26 +14,46 @@
   background-size: cover;
 }
 
-.title {
-  font-size: 3rem;
+.challenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.challenge__titleAndDays {
   z-index: 1;
+  padding: 20px;
+  border: 1px solid white;
+  margin-bottom: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.challenge__title {
+  z-index: 1;
+  font-size: 3rem;
   text-shadow: 0 0 40px rgba(0,0,0,0.4);
 }
 
-.daysToGo {
+.challenge__daysToGo {
   z-index: 1;
   font-size: 12rem;
   text-shadow: 0 0 40px rgba(0,0,0,0.4);
 }
 
-.backToOverview {
-  transition: all 0.25s;
-  padding: 12px;
+.challenge__backToOverview {
+  z-index: 1;
   color: white;
+  padding: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.backToOverview:hover, .backToOverview:focus {
+.challenge__backToOverview:hover, .challenge__backToOverview:focus {
   transform: scale(1.2);
-  box-shadow: 0 0 4px rgba(0,0,0,0.8);
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
 }

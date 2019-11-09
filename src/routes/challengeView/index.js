@@ -28,27 +28,12 @@ const ChallengeView = (prop) => {
         class={style.heroImage}
         style={{ 'background-image': `url('${imgUrl || fallbackImgUrl}')` }}
       />
-      <div
-        style={{
-          display: 'flex',
-          'justify-content': 'space-between',
-          'align-items': 'center',
-        }}
-      >
-        <div class={style.backToOverview}>Back to Overview</div>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          'flex-direction': 'column',
-          'justify-content': 'center',
-          'align-items': 'center',
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <div class={style.title}>{name ? name.toUpperCase() : ''}</div>
-        <div class={style.daysToGo}>{duration && createdDate ? calcDaysToGo(duration, createdDate) : ''}</div>
+      <div class={style.challenge}>
+        <div class={style.challenge__titleAndDays}>
+          <div class={style.challenge__title}>{name ? name.toUpperCase() : '...'}</div>
+          <div class={style.challenge__daysToGo}>{duration && createdDate ? calcDaysToGo(duration, createdDate) : 'XX'}</div>
+        </div>
+        <div class={style.challenge__backToOverview}>Back to Overview</div>
       </div>
     </div>
   );
