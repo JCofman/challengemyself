@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import firebase from './useAuth';
 
 export const useDatabaseEntry = entry => {
+  if (!entry) return;
   const [data, setData] = useState([]);
   useEffect(() => {
     const ref = firebase.database().ref(entry);

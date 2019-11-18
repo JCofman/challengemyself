@@ -4,11 +4,12 @@ import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
 import style from './challengesOverview.css';
 import { calcDaysToGo } from '../../utils';
 
+
 const ChallengesOverview = () => {
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
   const userId = challengeIdUrl.substr(0, challengeIdUrl.indexOf('/'));
 
-  const allChallenges = useDatabaseEntry(`${userId}`)[0];
+  const allChallenges = useDatabaseEntry(userId)[0];
 
   return (
     <div class={style.background}>
@@ -19,12 +20,11 @@ const ChallengesOverview = () => {
           Object.entries(allChallenges)
             .sort(([key1, c1], [key2, c2]) => c2.startDate - c1.startDate)
             .map(([key, challenge]) => (
-              <div
-                key={challenge.name + challenge.startDate}
-                class={style.item}
-              >
-                <Link href={`/${userId}/challenges/${key}`} class={style.link}>
-                  <div class={style.flex}>
+              <Link href={`/${userId}/challenges/${key}`} class={style.link}>
+                <div
+                  key={challenge.name + challenge.startDate}
+                  class={style.item}
+                >
                     <div class={style.name}>{challenge.name}</div>
                     <div class={style.duration}>{challenge.duration}</div>
                     <div class={style.start}>
@@ -33,9 +33,8 @@ const ChallengesOverview = () => {
                     <div class={style.togo}>
                       {calcDaysToGo(challenge.duration, challenge.startDate)}
                     </div>
-                  </div>
-                </Link>
-              </div>
+                </div>
+              </Link>
             ))}
         {allChallenges && Object.keys(allChallenges).length === 0 && (
           <div>You don't have any challenges yet! Go create one! 💪</div>

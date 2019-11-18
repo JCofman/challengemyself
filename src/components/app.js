@@ -1,26 +1,20 @@
 import { h } from 'preact';
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
-import style from './app.css';
 import Header from './header';
 import Footer from './footer';
 import Home from '../routes/home';
+import './app.css';
 
 // Code-splitting is automated for routes
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
 
+
 const App = () => {
-  const [currentPath, setCurrentPath] = useState('/');
-  /** Gets fired when the route changes.
-   *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-   *	@param {string} event.url	The newly routed URL
-   */
-  // const handleRoute = e => {
-  //   this.currentUrl = e.url;
-  // };
+  const [currentPath, setCurrentPath] = useState('/')
 
   const handleRouteChange = async(e) => {
     setCurrentPath(e.url);
