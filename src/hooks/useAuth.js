@@ -10,8 +10,6 @@ import 'firebase/database';
 
 let googleProvider;
 let authContext;
-let currentAuthInstance = undefined;
-
 if (typeof window !== 'undefined') {
   firebase.initializeApp({
     apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
