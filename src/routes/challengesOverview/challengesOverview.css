@@ -26,17 +26,26 @@
   padding: 12px;
   border: 1px solid white;
   border-radius: 4px;
-  /* background-color: rgba(255, 255, 255, 0.3); */
+  color: white;
+  text-decoration: transparent;
   backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: transform 0.1s;
+  background: linear-gradient(to right, rgba(255,255,255, 0.6) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background 0.18s ease-in-out;
 }
 .item > div {
   margin-bottom: 6px;
 }
 .item:hover {
-  transform: scale(0.8);
+  background-position: left bottom;
 }
+@keyframes fillBg {
+  from { background-position-x: 0% };
+  to { background-position-x: 100% };
+}
+
 .name {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -48,7 +57,7 @@
   align-self: center;
 }
 .daysToGo {
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 .duration {
@@ -56,6 +65,7 @@
   font-weight: 400;
 }
 .start {
+  margin-top: 16px;
   align-self: flex-end;
   font-size: 0.7rem;
 }
