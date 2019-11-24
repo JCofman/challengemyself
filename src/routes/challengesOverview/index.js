@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
+import Heading from '../../components/heading';
 import style from './challengesOverview.css';
 import { calcDaysToGo } from '../../utils';
 
@@ -13,7 +14,7 @@ const ChallengesOverview = () => {
   return (
     <div class={style.background}>
       <div class={style.root}>
-        <h1 class={style.headline}>Your Challenges</h1>
+        <h3 class={style.headline}>Your Challenges</h3>
         {allChallenges &&
           Object.keys(allChallenges).length > 0 &&
           Object.entries(allChallenges)
