@@ -1,11 +1,25 @@
 import { h } from 'preact';
 import style from './style';
-import { useAuth } from '../../hooks/useAuth';
+import { useState, useEffect } from 'preact/hooks';
+import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
+import { useAuth } from '../../hooks/useAuth';
+import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
 
 
 const Home = () => {
   const auth = useAuth();
+  const [userId, setUserId] = useState('');
+  let currentChallenges = useDatabaseEntry(userId);
+
+  useEffect(() => {
+      if (auth && auth.user) {
+        setUserId(auth.user.uid);
+      }
+      if (currentChallenges && currentChallenges[0] && Object.keys(currentChallenges[0]).length > 0) {
+        route(`/${userId}/challenges`)
+      }
+  }, [ auth, userId, currentChallenges ]);
 
   return (
     <div class={style.home}>
@@ -25,7 +39,7 @@ const Home = () => {
               >
                 Create a new Challenge
               </Link>
-              <button class={style.login} onClick={() => auth.signout()}>Sign out</button>
+              <button class={style.logout} onClick={() => auth.signout()}>Sign out</button>
             </div>
           ) : auth && (
             <button class={style.login} onClick={() => auth.signInWithGoogle()}>Sign in</button>

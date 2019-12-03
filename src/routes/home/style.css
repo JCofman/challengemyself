@@ -37,7 +37,7 @@
   background-color: hsl(35, 95%, 60%);
 }
 
-.login {
+.login, .logout {
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -45,6 +45,10 @@
   cursor: pointer;
   border: 1px solid white;
 }
-.login:hover {
+.login:hover, .logout:hover {
   border: 1px dashed white;
+}
+
+.login {
+    margin-top: 114px;
 }
