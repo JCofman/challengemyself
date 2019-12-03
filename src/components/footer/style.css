@@ -16,7 +16,7 @@
   padding-bottom: 12px;
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 960px) {
   .madeWith {
     justify-content: flex-start;
     padding: 6px 12px;

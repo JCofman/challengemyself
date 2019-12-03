@@ -19,6 +19,21 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 520px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
 .item {
   display: flex;
   flex-direction: column;
@@ -30,16 +45,12 @@
   text-decoration: transparent;
   backdrop-filter: blur(10px);
   overflow: hidden;
-  background: linear-gradient(to right, rgba(255,255,255, 0.6) 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: background 0.18s ease-in-out;
 }
 .item > div {
   margin-bottom: 6px;
 }
-.item:hover {
-  background-position: left bottom;
+.item:hover .time {
+  transform: scale(1.4);
 }
 @keyframes fillBg {
   from { background-position-x: 0% };
@@ -55,6 +66,7 @@
   display: flex;
   align-items: flex-end;
   align-self: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .daysToGo {
   font-size: 3rem;

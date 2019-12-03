@@ -15,7 +15,7 @@ const ChallengesOverview = () => {
     <div class={style.background}>
       <div class={style.root}>
         <h1 class={style.headline}>Your Challenges</h1>
-          <div class={style.gridContainer}>
+          <section class={style.gridContainer}>
             {allChallenges &&
               Object.keys(allChallenges).length > 0 &&
               Object.entries(allChallenges)
@@ -36,7 +36,7 @@ const ChallengesOverview = () => {
                   </Link>
                 ))
             }
-          </div>
+          </section>
         {allChallenges && Object.keys(allChallenges).length === 0 && (
           <div>You don't have any challenges yet! Go create one! 💪</div>
         )}
