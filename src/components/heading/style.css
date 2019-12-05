@@ -1,0 +1,56 @@
+@import '../vars.css';
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  position: relative;
+  font-family: 'Fusterd Brush Two', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  line-height: 0.4;
+  letter-spacing: 2.88px;
+}
+.h1::after,
+.h2::after,
+.h3::after,
+.h4::after,
+.h5::after,
+.h6::after {
+  content: '';
+  position: absolute;
+  left: -0.1em;
+  top: -0.05em;
+  width: 4.5em;
+  height: 0.5em;
+  z-index: -1;
+  background: rgb(255, 255, 255, 0.2);
+  transform: skew(0deg, -4deg) rotateY(20deg);
+}
+
+.h1 {
+  font-size: var(--h1);
+}
+
+.h2 {
+  font-size: var(--h2);
+}
+
+.h3 {
+  font-size: var(--h3);
+}
+
+.h4 {
+  font-size: var(--h4);
+}
+
+.h5 {
+  font-size: var(--h5);
+}
+
+.h6 {
+  font-size: var(--h6);
+}

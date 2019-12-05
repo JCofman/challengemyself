@@ -1,4 +1,4 @@
-.home {
+.home_wrapper {
   padding: 56px 20px;
   margin: 0 auto;
   min-height: 100%;
@@ -16,11 +16,15 @@
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-300%) };
-  to { transform: translateY(0) };
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
-.create {
+.home_create {
   display: block;
   color: white;
   text-decoration: none;
@@ -32,12 +36,13 @@
   transition: transform 0.2s;
 }
 
-.create:hover {
+.home_create:hover {
   transform: scale(1.1);
   background-color: hsl(35, 95%, 60%);
 }
 
-.login, .logout {
+.home_login,
+.home_logout {
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -45,10 +50,67 @@
   cursor: pointer;
   border: 1px solid white;
 }
-.login:hover, .logout:hover {
+.home_login:hover,
+.home_logout:hover {
   border: 1px dashed white;
 }
 
-.login {
-    margin-top: 114px;
+.home_login {
+  margin-top: 114px;
+}
+
+.home_brush {
+  position: absolute;
+  z-index: 0;
+  top: -3em;
+}
+
+.home_brush_second {
+  position: absolute;
+  top: 14em;
+}
+
+.home_section {
+  margin-top: 10rem;
+}
+
+.home_section p {
+  font-size: 3rem;
+  font-family: 'Fusterd Brush Two', sans-serif;
+}
+
+.home_hero_title {
+  border-bottom: 0;
+  font-weight: 100;
+  letter-spacing: 2px;
+  position: relative;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: inline-block;
+  animation-name: floating;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-decoration: none;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px) rotateY(-12deg);
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+  65% {
+    transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
+    text-shadow: -10px -10px 3px rgba(0, 0, 0, 0.15);
+  }
+  to {
+    transform: translate(0, 0px) rotateY(-12deg);
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.hero_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

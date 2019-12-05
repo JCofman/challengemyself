@@ -28,3 +28,16 @@ body {
   background-size: cover;
 }
 
+@font-face {
+  font-family: 'Fusterd Brush Two';
+  src: url('../assets/fonts/Fusterd-Brush-Two.woff2') format('woff2'),
+    url('../assets/fonts/Fusterd-Brush-Two.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fusterd Bonus';
+  src: url('../assets/fonts/FusterdBonus.woff2') format('woff2'),
+    url('../assets/fonts/FusterdBonus.woff') format('woff');
+  font-display: swap;
+}
