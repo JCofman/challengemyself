@@ -1,22 +1,21 @@
 import { useState, useEffect } from 'preact/hooks';
-import { Router, route } from 'preact-router';
+import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
 import { useAuth } from '../../hooks/useAuth';
 import Heading from '../../components/heading';
-
 import style from './style';
 
-const signin = e => {
+const signin = auth => async e => {
   if (auth && auth.signInWithGoogle) {
-    auth.signInWithGoogle();
+    await auth.signInWithGoogle();
     route('/create');
   }
 };
 
-const signout = e => {
+const signout = auth => e => {
   if (auth && auth.signout) {
     auth.signout();
-    route('/create');
+    route('/');
   }
 };
 
@@ -28,7 +27,8 @@ const Header = props => {
 
   useEffect(() => {
     if (auth && auth.user) {
-      setUserId(auth.user.uid);
+      const userId = auth.user.uid;
+      setUserId(userId);
     }
   }, [auth]);
 
@@ -68,14 +68,16 @@ const Header = props => {
               style={{ backgroundImage: `url('${auth.user.photoURL}')` }}
               href={auth && auth.user && userId ? `/${userId}/challenges` : '/'}
             ></Link>
-            <Link class={style.login} onClick={signout}>
+            <Link class={style.login} onClick={signout(auth)}>
               Sign out
             </Link>
           </>
         ) : (
-          <Link class={style.login} onClick={signin}>
-            Sign in with Google
-          </Link>
+          auth && (
+            <Link class={style.login} onClick={signin(auth)}>
+              Sign in with Google
+            </Link>
+          )
         )}
       </nav>
     </header>

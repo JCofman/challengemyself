@@ -12,7 +12,7 @@
   z-index: 999999;
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 820px) {
   .header {
     background-color: rgba(0, 0, 0, 0.75);
   }
