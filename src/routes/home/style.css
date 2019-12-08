@@ -1,5 +1,7 @@
 .home_wrapper {
-  padding: 56px 20px;
+  padding-top: 56px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
   min-height: 100%;
   width: auto;
@@ -105,7 +107,7 @@
 
 @media (min-width: 320px) {
   .home_login {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .home_brush {
     width: 100%;

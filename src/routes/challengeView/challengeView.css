@@ -66,6 +66,7 @@
 
 .challenge__backToOverview {
   position: absolute;
+  font-size: 1.6rem;
   bottom: 20%;
   z-index: 1;
   color: white;
