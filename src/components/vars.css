@@ -1,21 +1,30 @@
 :root {
-  --base-size: 0.8rem;
+  --base-size: 1rem;
   --type-scale: 1.5;
   --h5: calc(var(--base-size) * var(--type-scale));
   --h4: calc(var(--h5) * var(--type-scale));
   --h3: calc(var(--h4) * var(--type-scale));
   --h2: calc(var(--h3) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));
+  --small: 320px;
+  --medium: 480px;
+  --large: 768px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   :root {
     --base-size: 1rem;
   }
 }
 
+@media (min-width: 480px) {
+  :root {
+    --base-size: 1.6rem;
+  }
+}
+
 @media (min-width: 768px) {
   :root {
-    --base-size: 1.2rem;
+    --base-size: 1.8rem;
   }
 }

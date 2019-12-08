@@ -55,31 +55,40 @@ const Home = () => {
       </div>
 
       <section class={style.home_section}>
-        <p>Challenge your everyday life</p>
+        <p class={style.home_section_highlight}>Challenge your everyday life</p>
+        <p class={style.home_section_test}>
+          A webpage for creating and keeping motivation. For trying out new
+          things, exploring uncharted territories with new challenges. Always
+          giving the best you can and reaching out for more experiences.
+        </p>
+        {auth && auth.user ? (
+          <div>
+            <Link
+              class={style.home_create}
+              activeClassName={style.active}
+              href="/create"
+            >
+              Create a new Challenge
+            </Link>
+            <button class={style.home_logout} onClick={() => auth.signout()}>
+              Sign out
+              <div class={style.button_horizontal} />
+              <div class={style.button_vertial} />
+            </button>
+          </div>
+        ) : (
+          auth && (
+            <button
+              class={style.home_login}
+              onClick={() => auth.signInWithGoogle()}
+            >
+              Sign in
+              <div class={style.button_horizontal} />
+              <div class={style.button_vertial} />
+            </button>
+          )
+        )}
       </section>
-      {auth && auth.user ? (
-        <div>
-          <Link
-            class={style.home_create}
-            activeClassName={style.active}
-            href="/create"
-          >
-            Create a new Challenge
-          </Link>
-          <button class={style.home_logout} onClick={() => auth.signout()}>
-            Sign out
-          </button>
-        </div>
-      ) : (
-        auth && (
-          <button
-            class={style.home_login}
-            onClick={() => auth.signInWithGoogle()}
-          >
-            Sign in
-          </button>
-        )
-      )}
     </main>
   );
 };

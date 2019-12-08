@@ -1,7 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
-import Heading from '../../components/heading';
 import style from './challengesOverview.css';
 import { calcDaysToGo, formatDate } from '../../utils';
 

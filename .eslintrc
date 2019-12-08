@@ -1,0 +1,26 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-developit",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "strict": ["error", "never"],
+    "react/jsx-indent-props": "off"
+  },
+  "env": {
+    "browser": true
+  }
+}

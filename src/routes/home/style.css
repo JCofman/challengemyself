@@ -1,5 +1,7 @@
 .home_wrapper {
-  padding: 56px 20px;
+  padding-top: 56px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
   min-height: 100%;
   width: auto;
@@ -43,45 +45,53 @@
 
 .home_login,
 .home_logout {
-  font-size: 14px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  height: 40px;
+  width: 200px;
   color: white;
   font-weight: bold;
   background: none;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid hsl(35, 95%, 60%);
+  transition: all 0.2s ease-in-out;
 }
+
 .home_login:hover,
 .home_logout:hover {
-  border: 1px dashed white;
+  transform: scale(1.2);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .home_login {
-  margin-top: 114px;
+  margin-top: 5rem;
 }
 
 .home_brush {
   position: absolute;
   z-index: 0;
   top: -3em;
-}
-
-.home_brush_second {
-  position: absolute;
-  top: 14em;
+  width: 70%;
 }
 
 .home_section {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
-.home_section p {
-  font-size: 3rem;
+.home_section_highlight {
+  font-size: 4rem;
   font-family: 'Fusterd Brush Two', sans-serif;
+}
+
+.home_section_test {
+  font-size: 2rem;
 }
 
 .home_hero_title {
   border-bottom: 0;
   font-weight: 100;
+  margin-top: 0rem;
   letter-spacing: 2px;
   position: relative;
   color: #fff;
@@ -94,6 +104,40 @@
   animation-timing-function: ease-in-out;
   text-decoration: none;
 }
+
+@media (min-width: 320px) {
+  .home_login {
+    margin-top: 5rem;
+  }
+  .home_brush {
+    width: 100%;
+  }
+  .home_hero_title {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .home_brush {
+    width: 100%;
+  }
+  .home_hero_title {
+    margin-top: 2rem;
+  }
+  .home_section_highlight {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .home_brush {
+    width: 100%;
+  }
+  .home_hero_title {
+    margin-top: -10rem;
+  }
+}
+
 @keyframes floating {
   from {
     transform: translate(0, 0px) rotateY(-12deg);

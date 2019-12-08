@@ -53,8 +53,12 @@
   transform: scale(1.4);
 }
 @keyframes fillBg {
-  from { background-position-x: 0% };
-  to { background-position-x: 100% };
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 100%;
+  }
 }
 
 .name {
@@ -69,17 +73,17 @@
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .daysToGo {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 800;
 }
 .duration {
-  font-size: 0.85rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .start {
   margin-top: 16px;
   align-self: flex-end;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
 }
 .link {
   color: white;
