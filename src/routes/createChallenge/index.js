@@ -9,7 +9,7 @@ const CreateChallenge = () => {
   const [duration, setDuration] = useState(100);
   const auth = useAuth();
 
-  const submitChallenge = (e) => {
+  const submitChallenge = e => {
     e.preventDefault();
     // validarte inputs
     if (name.trim() === '') return;
@@ -21,9 +21,9 @@ const CreateChallenge = () => {
     const startDate = new Date().getTime();
     // Pushing an object to firebase with a random number
     newChallenge.set({
-      name: name,
-      duration: duration,
-      startDate: startDate,
+      name,
+      duration,
+      startDate,
     });
     // redirect to created challenge
     route(`/${userID}/challenges/${newChallenge.key}`);

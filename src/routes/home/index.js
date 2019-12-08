@@ -55,8 +55,14 @@ const Home = () => {
       </div>
 
       <section class={style.home_section}>
-        <p>Challenge your everyday life</p>
+        <p class={style.home_section_highlight}>Challenge your everyday life</p>
+        <p class={style.home_section_test}>
+          <br />A webpage for creating and keeping motivation. For trying out
+          new things, exploring uncharted territories with new challenges.
+          Always giving the best you can and reaching out for more experiences.
+        </p>
       </section>
+
       {auth && auth.user ? (
         <div>
           <Link
@@ -68,6 +74,8 @@ const Home = () => {
           </Link>
           <button class={style.home_logout} onClick={() => auth.signout()}>
             Sign out
+            <div class={style.button_horizontal} />
+            <div class={style.button_vertial} />
           </button>
         </div>
       ) : (
@@ -77,6 +85,8 @@ const Home = () => {
             onClick={() => auth.signInWithGoogle()}
           >
             Sign in
+            <div class={style.button_horizontal} />
+            <div class={style.button_vertial} />
           </button>
         )
       )}

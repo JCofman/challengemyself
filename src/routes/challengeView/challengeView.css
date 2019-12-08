@@ -44,22 +44,22 @@
 
 .challenge__title {
   z-index: 1;
-  font-size: 3rem;
-  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  font-size: 5rem;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   transform: translateX(-30%) translateY(-20%) translateZ(50px);
 }
 
 .challenge__daysToGo {
   z-index: 1;
-  font-size: 12rem;
-  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  font-size: 16rem;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   text-align: right;
   transform: translateX(20%) translateZ(50px);
 }
 
 .challenge__daysToGoDesc {
   z-index: 1;
-  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   text-align: right;
   transform: translateY(-20px) translateZ(50px);
 }
@@ -72,11 +72,12 @@
   padding: 12px;
   cursor: pointer;
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.challenge__backToOverview:hover, .challenge__backToOverview:focus {
+.challenge__backToOverview:hover,
+.challenge__backToOverview:focus {
   transform: scale(1.2);
-  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }

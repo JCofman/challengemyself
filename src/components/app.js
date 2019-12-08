@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useState, useEffect } from 'preact/hooks';
+import { useState } from 'preact/hooks';
 import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
 import Header from './header';
@@ -12,13 +12,12 @@ import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
 
-
 const App = () => {
-  const [currentPath, setCurrentPath] = useState('/')
+  const [currentPath, setCurrentPath] = useState('/');
 
-  const handleRouteChange = async(e) => {
+  const handleRouteChange = async e => {
     setCurrentPath(e.url);
-  }
+  };
 
   return (
     <div id="app">
@@ -30,7 +29,7 @@ const App = () => {
           <ChallengeView path="/:userId/challenges/:challengeId" />
           <ChallengesOverview path="/:userId/challenges" />
         </Router>
-        <Footer></Footer>
+        <Footer />
       </ProvideAuth>
     </div>
   );

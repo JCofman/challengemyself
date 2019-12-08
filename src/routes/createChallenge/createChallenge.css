@@ -6,13 +6,17 @@
   margin: 0 auto;
   color: white;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   animation: slideDown 0.6s;
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-300%) };
-  to { transform: translateY(0) };
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .form {
@@ -26,7 +30,7 @@
 .input {
   width: 100%;
   padding: 0.75rem;
-  font-size: 0.75rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 2rem;
   border-radius: 4px;
