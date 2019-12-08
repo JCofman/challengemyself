@@ -4,10 +4,10 @@ import { Router } from 'preact-router';
 import { ProvideAuth } from '../hooks/useAuth';
 import Header from './header';
 import Footer from './footer';
-import Home from '../routes/home';
 import './app.css';
 
 // Code-splitting is automated for routes
+import Home from '../routes/home';
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
