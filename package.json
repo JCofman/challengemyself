@@ -7,7 +7,7 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "validate": "npm-run-all --parallel check-format lint",
+    "validate": "npm-run-all --parallel check-format lint test",
     "check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|json)\"",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "build": "preact build",
@@ -21,6 +21,8 @@
     "build/*"
   ],
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/preact": "^1.0.2",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.7.2",
     "eslint-config-developit": "^1.1.1",
@@ -37,9 +39,9 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
-    "firebase": "^7.5.2",
+    "firebase": "^7.6.0",
     "modern-normalize": "^0.5.0",
-    "preact": "^10.0.5",
+    "preact": "^10.1.1",
     "preact-render-to-string": "^5.1.2",
     "preact-router": "^3.1.0",
     "vanilla-tilt": "^1.7.0"

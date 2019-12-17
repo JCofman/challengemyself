@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'preact/hooks';
+import { h } from 'preact';
 import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
 import { useAuth } from '../../hooks/useAuth';
 import Heading from '../../components/heading';
-import style from './style';
+import style from './style.css';
 
 const signin = auth => async e => {
   if (auth && auth.signInWithGoogle) {

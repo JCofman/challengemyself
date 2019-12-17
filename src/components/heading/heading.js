@@ -1,5 +1,6 @@
+import { h } from 'preact';
 import PropTypes from 'prop-types';
-import style from './style';
+import style from './style.css';
 
 export const APPEARANCES = {
   H1: `H1`,
