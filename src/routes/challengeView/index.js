@@ -5,18 +5,29 @@ import { Link } from 'preact-router/match';
 
 import { useAuth } from '../../hooks/useAuth';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
-import style from './challengeView.css';
 import fallbackImgUrl from '../../assets/fallback-image.jpeg';
 import { calcDaysToGo } from '../../utils';
 
-const ChallengeView = prop => {
+import style from './challengeView.css';
+
+const UnauthenticatedChallengeView = () => {
+  return (
+    <p class={style.root}>
+      You have to authenticate before we can load your challenges go to login
+      page
+      <Link href={`/}`}> here</Link>.
+    </p>
+  );
+};
+
+const AuthenticatedChallengeView = () => {
   const auth = useAuth();
   const [imgUrl, setImgUrl] = useState('');
 
   const clientId =
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
-  const [duration, name, createdDate] = useDatabaseEntry(challengeIdUrl);
+  const { isLoading, isError, data } = useDatabaseEntry(challengeIdUrl);
   const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
 
   useEffect(() => {
@@ -31,6 +42,15 @@ const ChallengeView = prop => {
         setImgUrl(picUrl);
       });
   }, [unsplashUrl]);
+
+  if (isLoading) {
+    return <p>Loading your challenge...</p>;
+  }
+  if (isError) {
+    return <p> Something went wrong</p>;
+  }
+
+  const [duration, name, createdDate] = data;
 
   return (
     <div class={style.root}>
@@ -54,15 +74,26 @@ const ChallengeView = prop => {
         </div>
         <Link
           href={
-            auth && auth.user && auth.user.uid
-              ? `/${auth.user.uid}/challenges`
-              : '/'
+            auth.user && auth.user.uid ? `/${auth.user.uid}/challenges` : '/'
           }
           class={style.challenge__backToOverview}
         >
           Back to Overview
         </Link>
       </div>
+    </div>
+  );
+};
+const ChallengeView = () => {
+  const auth = useAuth();
+
+  return (
+    <div class={style.root}>
+      {auth.user !== false ? (
+        <AuthenticatedChallengeView />
+      ) : (
+        <UnauthenticatedChallengeView />
+      )}
     </div>
   );
 };

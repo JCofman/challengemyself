@@ -12,7 +12,6 @@ const Home = () => {
   const auth = useAuth();
   const [userId, setUserId] = useState('');
   let currentChallenges = useDatabaseEntry(userId);
-
   useEffect(() => {
     if (auth && auth.user) {
       setUserId(auth.user.uid);

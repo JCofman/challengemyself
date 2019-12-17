@@ -1,10 +1,22 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
+import { Link } from 'preact-router/match';
+
 import firebase, { useAuth } from '../../hooks/useAuth';
 import style from './createChallenge.css';
 
-const CreateChallenge = () => {
+const UnauthenticatedCreateChallenge = () => {
+  return (
+    <p class={style.root}>
+      You have to authenticate before we can load your challenges go to login
+      page
+      <Link href={`/}`}> here</Link>.
+    </p>
+  );
+};
+
+const AuthenticatedCreateChallenge = () => {
   const [name, setName] = useState('');
   const [duration, setDuration] = useState(100);
   const auth = useAuth();
@@ -48,7 +60,6 @@ const CreateChallenge = () => {
             value={name}
             onchange={e => setName(e.target.value)}
             required
-            pattern="[A-Za-z0-9]{3,20}"
             aria-label="challenge-name"
             class={style.input}
           />
@@ -80,6 +91,19 @@ const CreateChallenge = () => {
           </button>
         </div>
       </form>
+    </div>
+  );
+};
+
+const CreateChallenge = () => {
+  const auth = useAuth();
+  return (
+    <div class={style.root}>
+      {auth.user !== false ? (
+        <AuthenticatedCreateChallenge />
+      ) : (
+        <UnauthenticatedCreateChallenge />
+      )}
     </div>
   );
 };

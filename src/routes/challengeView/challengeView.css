@@ -4,6 +4,12 @@
   overflow: hidden;
 }
 
+.root p {
+  font-size: 2rem;
+  margin: 85px 20px; /* headline */
+  color: white;
+}
+
 .heroImage {
   position: absolute;
   top: 0;
