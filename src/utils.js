@@ -1,3 +1,8 @@
+/**
+ * Returns the remaining duration in days from the passed timestamp
+ * @param {number} duration
+ * @param {Date} createdTimestamp
+ */
 export const calcDaysToGo = (duration, createdTimestamp) => {
   const today = new Date().getTime();
   const difInDays = Math.round(
@@ -10,6 +15,10 @@ export const calcDaysToGo = (duration, createdTimestamp) => {
   return remainingDays;
 };
 
+/**
+ * Formats the date into dd.mm.yyy format
+ * @param {Date} date
+ */
 export const formatDate = date => {
   let d = new Date(date),
     month = '' + (d.getMonth() + 1),
