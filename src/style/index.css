@@ -4,7 +4,7 @@ html,
 body {
   font-size: 62.5%; /* font-size 1em = 10px bei normaler Browser-Einstellung */
 
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -12,8 +12,16 @@ body {
   font-family: 'Roboto regular', 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
   color: #444;
+  background-color: rgba(0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -21,14 +29,7 @@ body {
 }
 
 #app {
-  height: 100%;
-  background-color: black;
-  background-size: cover;
-  background-position: center center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 100%;
 }
 
 @font-face {
