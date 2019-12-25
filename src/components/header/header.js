@@ -13,9 +13,9 @@ const signin = auth => async e => {
   }
 };
 
-const signout = auth => e => {
+const signout = auth => async e => {
   if (auth && auth.signout) {
-    auth.signout();
+    await auth.signout();
     route('/');
   }
 };

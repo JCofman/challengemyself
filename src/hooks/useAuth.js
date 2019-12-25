@@ -45,17 +45,18 @@ function useProvideAuth() {
 
   // Wrap any Firebase methods we want to use making sure ...
   // ... to save the user to state.
-  const signin = (email, password) =>
-    firebase
+  const signin = async (email, password) => {
+    return firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(response => {
         setUser(response.user);
         return response.user;
       });
+  };
 
-  const signInWithGoogle = () => {
-    firebase
+  const signInWithGoogle = async () => {
+    return firebase
       .auth()
       .signInWithPopup(googleProvider)
       .then(response => {
@@ -63,6 +64,7 @@ function useProvideAuth() {
         return response.user;
       });
   };
+
   const signup = (email, password) =>
     firebase
       .auth()
@@ -72,14 +74,14 @@ function useProvideAuth() {
         return response.user;
       });
 
-  const signout = () =>
-    firebase
+  const signout = async () => {
+    return firebase
       .auth()
       .signOut()
       .then(() => {
         setUser(false);
       });
-
+  };
   const sendPasswordResetEmail = email =>
     firebase
       .auth()

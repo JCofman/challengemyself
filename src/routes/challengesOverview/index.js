@@ -9,9 +9,8 @@ import style from './challengesOverview.css';
 const UnauthenticatedChallengesOverview = () => {
   return (
     <p class={style.root}>
-      You have to authenticate before we can load your challenges go to login
-      page
-      <Link href={`/}`}> here</Link>.
+      You have to authenticate before we can load your challenges! Please visit
+      the <Link href="/">login</Link> page.
     </p>
   );
 };
