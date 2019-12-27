@@ -93,13 +93,13 @@ const ChallengeView = () => {
   const auth = useAuth();
 
   return (
-    <div class={style.root}>
+    <main class={style.root}>
       {auth.user !== false ? (
         <AuthenticatedChallengeView />
       ) : (
         <UnauthenticatedChallengeView />
       )}
-    </div>
+    </main>
   );
 };
 
