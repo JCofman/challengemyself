@@ -1,7 +1,12 @@
 .root {
   color: white;
   height: 100%;
-  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .root p {
@@ -26,10 +31,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  max-width: calc(100vw - 50px);
 }
 
 .challenge__titleAndDays {
+  max-width: calc(100vw - 50px);
   z-index: 1;
   padding: 20px;
   border: 1px solid white;
@@ -42,7 +48,13 @@
   z-index: 1;
   font-size: 5rem;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-  transform: translateX(-30%) translateY(-20%) translateZ(50px);
+  transform: translateX(-30px) translateY(-10px) translateZ(50px);
+}
+
+@media screen and (max-width: 960px) {
+  .challenge__title{
+    font-size: 2.5rem;
+  }
 }
 
 .challenge__daysToGo {
@@ -50,15 +62,21 @@
   font-size: 16rem;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   text-align: right;
-  transform: translateX(20%) translateZ(50px);
+  transform: translateX(30px) translateZ(50px);
+}
+
+@media screen and (max-width: 960px) {
+  .challenge__daysToGo{
+    font-size: 12rem;
+  }
 }
 
 .challenge__daysToGoDesc {
   z-index: 1;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   text-align: right;
-  transform: translateY(-20px) translateZ(50px);
+  transform: translateX(20px) translateZ(50px);
 }
 
 .challenge__backToOverview {

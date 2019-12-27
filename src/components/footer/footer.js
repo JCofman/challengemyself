@@ -1,4 +1,4 @@
-import style from './style';
+import style from './footer.css';
 import { Link } from 'preact-router/match';
 
 const Footer = () => {
