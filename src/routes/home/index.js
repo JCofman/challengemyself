@@ -6,6 +6,7 @@ import { Link } from 'preact-router/match';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
 import { useAuth } from '../../hooks/useAuth';
 import Heading from '../../components/heading';
+import Button from '../../components/button';
 import style from './style';
 
 const Home = () => {
@@ -69,20 +70,12 @@ const Home = () => {
             >
               Create a new Challenge
             </Link>
-            <button class={style.home_logout} onClick={() => auth.signout()}>
-              Sign out
-              <div class={style.button_horizontal} />
-              <div class={style.button_vertial} />
-            </button>
+            <Button onClick={() => auth.signout()}>Sign out</Button>
           </div>
         ) : (
           auth && (
-            <Link href="/login" class={style.title}>
-              <button class={style.home_login} onClick={() => {}}>
-                Sign in
-                <div class={style.button_horizontal} />
-                <div class={style.button_vertial} />
-              </button>
+            <Link href="/login" class={style.signin}>
+              Sign in
             </Link>
           )
         )}

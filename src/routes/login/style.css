@@ -1,5 +1,7 @@
 .login {
   margin: var(--margin-xl);
+  margin-top: 10rem;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -8,45 +10,56 @@
 .login label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-s);
 }
-.login form input,
+
+.login input,
 textarea,
 select {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid black;
+
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0;
+  margin-top: var(--margin-s);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: var(--margin-m);
+}
+.login input:hover,
+input:focus {
+  outline: 0;
+  border-color: var(--primary);
 }
 
-.login form button,
-input[type='submit'] {
-  width: auto;
-  background: red;
-  color: white;
-  border: 0;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 0.5rem 1.2rem;
-}
-
-fieldset {
+.login fieldset {
   border: 0;
   padding: 0;
 }
 
-fieldset[disabled] {
+.login fieldset[disabled] {
   opacity: 0.5;
 }
 
-fieldset::before {
-  height: 10px;
+.login fieldset::before {
+  position: relative;
+  top: -1rem;
+  height: 1rem;
   content: '';
   display: block;
   background-image: linear-gradient(
     to right,
     #ff3019 0%,
-    #e2b04a 50%,
+    var(--primary) 50%,
     #ff3019 100%
   );
 }

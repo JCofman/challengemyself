@@ -9,9 +9,11 @@ import style from './createChallenge.css';
 const UnauthenticatedCreateChallenge = () => {
   return (
     <p class={style.root}>
-      You have to authenticate before we can load your challenges go to login
-      page
-      <Link href={`/login`}> here</Link>.
+      You have to authenticate before we can load this page. Please visit the
+      <Link href={`/login`} style="margin: 0 4px">
+        login
+      </Link>{' '}
+      page.
     </p>
   );
 };
@@ -40,7 +42,6 @@ const AuthenticatedCreateChallenge = () => {
     // redirect to created challenge
     route(`/${userID}/challenges/${newChallenge.key}`);
   };
-
   return (
     <div class={style.root}>
       <form onSubmit={submitChallenge} class={style.form}>
@@ -98,13 +99,13 @@ const AuthenticatedCreateChallenge = () => {
 const CreateChallenge = () => {
   const auth = useAuth();
   return (
-    <div class={style.root}>
+    <main class={style.root}>
       {auth.user !== false ? (
         <AuthenticatedCreateChallenge />
       ) : (
         <UnauthenticatedCreateChallenge />
       )}
-    </div>
+    </main>
   );
 };
 

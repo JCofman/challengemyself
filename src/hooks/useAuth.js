@@ -42,25 +42,58 @@ export const useAuth = () => useContext(authContext);
 // Provider hook that creates auth object and handles state
 function useProvideAuth() {
   const [user, setUser] = useState(null);
-
   // Wrap any Firebase methods we want to use making sure ...
   // ... to save the user to state.
-  const signin = (email, password) =>
-    firebase
+
+  /**
+   * tries to authenticate with usercredentials.
+   * returns success with  {data: user}. On error returns {errorMessage: error}
+   * @param {string} email
+   * @param {string} password
+   */
+  const signin = async (email, password) => {
+    return firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(response => {
         setUser(response.user);
-        return response.user;
+        return {
+          data: response.user,
+          isLoading: false,
+          errorMessage: '',
+        };
+      })
+      .catch(error => {
+        const { message: errorMessage } = error;
+        return {
+          data: null,
+          isLoading: false,
+          errorMessage,
+        };
       });
-
-  const signInWithGoogle = () => {
-    firebase
+  };
+  /**
+   * authenticate with google popup.
+   */
+  const signInWithGoogle = async () => {
+    return firebase
       .auth()
       .signInWithPopup(googleProvider)
       .then(response => {
         setUser(response.user);
-        return response.user;
+        return {
+          data: response.user,
+          isLoading: false,
+          errorMessage: '',
+        };
+      })
+      .catch(error => {
+        const { message: errorMessage } = error;
+        return {
+          data: null,
+          isLoading: false,
+          errorMessage,
+        };
       });
   };
   /**
@@ -74,17 +107,29 @@ function useProvideAuth() {
       .createUserWithEmailAndPassword(email, password)
       .then(response => {
         setUser(response.user);
-        return response.user;
+        return {
+          data: response.user,
+          isLoading: false,
+          errorMessage: '',
+        };
+      })
+      .catch(error => {
+        const { message: errorMessage } = error;
+        return {
+          data: null,
+          isLoading: false,
+          errorMessage,
+        };
       });
 
-  const signout = () =>
-    firebase
+  const signout = async () => {
+    return firebase
       .auth()
       .signOut()
       .then(() => {
         setUser(false);
       });
-
+  };
   const sendPasswordResetEmail = email =>
     firebase
       .auth()

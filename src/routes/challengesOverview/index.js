@@ -71,13 +71,13 @@ const AuthenticatedChallengesOverview = () => {
 const ChallengesOverview = () => {
   const auth = useAuth();
   return (
-    <div class={style.background}>
+    <main class={style.background}>
       {auth.user !== false ? (
         <AuthenticatedChallengesOverview />
       ) : (
         <UnauthenticatedChallengesOverview />
       )}
-    </div>
+    </main>
   );
 };
 

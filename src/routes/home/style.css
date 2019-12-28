@@ -1,5 +1,5 @@
 .home_wrapper {
-  padding-top: 56px;
+  padding-top: 100px;
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
@@ -30,7 +30,7 @@
   display: block;
   color: white;
   text-decoration: none;
-  background-color: hsl(35, 100%, 55%);
+  background-color: var(--primary);
   padding: 0.75rem;
   border-radius: 4px;
   margin: 1rem 0.5rem 3rem 0.5rem;
@@ -40,7 +40,7 @@
 
 .home_create:hover {
   transform: scale(1.1);
-  background-color: hsl(35, 95%, 60%);
+  background-color: var(--primary);
 }
 
 .home_login,
@@ -54,7 +54,7 @@
   font-weight: bold;
   background: none;
   cursor: pointer;
-  border: 1px solid hsl(35, 95%, 60%);
+  border: 1px solid var(--primary);
   transition: all 0.2s ease-in-out;
 }
 
@@ -110,20 +110,6 @@
   border: 5px solid #444;
   overflow: hidden;
   cursor: pointer;
-}
-
-.popup {
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  right: 25px;
-  bottom: 25px;
-  background: #666;
-  box-shadow: 0 5px 50px #000;
-  text-align: center;
-  overflow: auto;
-  cursor: pointer;
-  animation: zoom 0.4s forwards ease 1;
 }
 
 @keyframes zoom {
@@ -192,4 +178,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.signin {
+  font-size: 2rem;
 }

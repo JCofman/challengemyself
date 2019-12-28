@@ -9,10 +9,24 @@
   --small: 320px;
   --medium: 480px;
   --large: 768px;
+
+  /* MARGIN */
+
   --margin-s: 1rem;
   --margin-m: 2rem;
   --margin-l: 3rem;
   --margin-xl: 4rem;
+
+  /* PADDING */
+
+  --padding-s: 0.9rem;
+  --padding-m: 1.2rem;
+  --padding-l: 1.5rem;
+  --padding-xl: 3rem;
+
+  /* COLORS */
+  --primary: hsl(35, 95%, 60%);
+  --secondary: #ff3019;
 }
 
 @media (min-width: 320px) {

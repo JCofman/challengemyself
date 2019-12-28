@@ -12,6 +12,7 @@ import Login from '../routes/login';
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
+import Imprint from '../routes/Imprint';
 
 const App = () => {
   const [currentPath, setCurrentPath] = useState('/');
@@ -30,6 +31,7 @@ const App = () => {
           <CreateChallenge path="/create" />
           <ChallengeView path="/:userId/challenges/:challengeId" />
           <ChallengesOverview path="/:userId/challenges" />
+          <Imprint path="/imprint" />
         </Router>
         <Footer />
       </ProvideAuth>

@@ -8,6 +8,7 @@
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.468);
   font-size: 1.4rem;
   animation: slideDown 0.6s;
+  margin-top: 80px;
 }
 
 @keyframes slideDown {
@@ -50,5 +51,5 @@
 
 .createButton:hover {
   transform: scale(1.1);
-  background-color: hsl(35, 95%, 60%);
+  background-color: var(--primary);
 }

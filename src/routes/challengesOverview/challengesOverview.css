@@ -1,12 +1,11 @@
 .background {
   height: 100%;
-  margin: 0 auto;
   font-size: 1.2rem;
   overflow-y: scroll;
 }
 
 .root {
-  margin: 85px 20px; /* headline */
+  margin: 95px 20px 20px 20px; /* headline */
   color: white;
 }
 .headline {
