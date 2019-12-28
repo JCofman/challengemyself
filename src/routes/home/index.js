@@ -77,14 +77,13 @@ const Home = () => {
           </div>
         ) : (
           auth && (
-            <button
-              class={style.home_login}
-              onClick={() => auth.signInWithGoogle()}
-            >
-              Sign in
-              <div class={style.button_horizontal} />
-              <div class={style.button_vertial} />
-            </button>
+            <Link href="/login" class={style.title}>
+              <button class={style.home_login} onClick={() => {}}>
+                Sign in
+                <div class={style.button_horizontal} />
+                <div class={style.button_vertial} />
+              </button>
+            </Link>
           )
         )}
       </section>

@@ -105,6 +105,41 @@
   text-decoration: none;
 }
 
+.thumb {
+  width: 100px;
+  border: 5px solid #444;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  background: #666;
+  box-shadow: 0 5px 50px #000;
+  text-align: center;
+  overflow: auto;
+  cursor: pointer;
+  animation: zoom 0.4s forwards ease 1;
+}
+
+@keyframes zoom {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 @media (min-width: 320px) {
   .home_login {
     margin-top: 5rem;

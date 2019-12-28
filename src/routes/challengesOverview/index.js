@@ -11,7 +11,7 @@ const UnauthenticatedChallengesOverview = () => {
     <p class={style.root}>
       You have to authenticate before we can load your challenges go to login
       page
-      <Link href={`/}`}> here</Link>.
+      <Link href={`/login`}> here</Link>.
     </p>
   );
 };

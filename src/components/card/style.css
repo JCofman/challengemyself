@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  text-decoration: transparent;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}

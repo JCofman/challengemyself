@@ -9,6 +9,10 @@
   --small: 320px;
   --medium: 480px;
   --large: 768px;
+  --margin-s: 1rem;
+  --margin-m: 2rem;
+  --margin-l: 3rem;
+  --margin-xl: 4rem;
 }
 
 @media (min-width: 320px) {

@@ -63,6 +63,11 @@ function useProvideAuth() {
         return response.user;
       });
   };
+  /**
+   * calls firebase signup with provided auth credentials
+   * @param string email
+   * @param string password
+   */
   const signup = (email, password) =>
     firebase
       .auth()
