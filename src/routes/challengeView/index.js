@@ -13,8 +13,11 @@ import style from './challengeView.css';
 const UnauthenticatedChallengeView = () => {
   return (
     <p class={style.root}>
-      You have to authenticate before we can load your challenges. Please visit
-      the <Link href="/">login</Link> page.
+      You have to authenticate before we can load this page. Please visit the
+      <Link href={`/login`} style="margin: 0 4px">
+        login
+      </Link>{' '}
+      page.
     </p>
   );
 };
@@ -22,7 +25,6 @@ const UnauthenticatedChallengeView = () => {
 const AuthenticatedChallengeView = () => {
   const auth = useAuth();
   const [imgUrl, setImgUrl] = useState('');
-
   const clientId =
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'

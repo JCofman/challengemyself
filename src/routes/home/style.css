@@ -30,7 +30,7 @@
   display: block;
   color: white;
   text-decoration: none;
-  background-color: hsl(35, 100%, 55%);
+  background-color: var(--primary);
   padding: 0.75rem;
   border-radius: 4px;
   margin: 1rem 0.5rem 3rem 0.5rem;
@@ -40,7 +40,7 @@
 
 .home_create:hover {
   transform: scale(1.1);
-  background-color: hsl(35, 95%, 60%);
+  background-color: var(--primary);
 }
 
 .home_login,
@@ -54,7 +54,7 @@
   font-weight: bold;
   background: none;
   cursor: pointer;
-  border: 1px solid hsl(35, 95%, 60%);
+  border: 1px solid var(--primary);
   transition: all 0.2s ease-in-out;
 }
 
@@ -103,6 +103,27 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   text-decoration: none;
+}
+
+.thumb {
+  width: 100px;
+  border: 5px solid #444;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (min-width: 320px) {
@@ -157,4 +178,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.signin {
+  font-size: 2rem;
 }

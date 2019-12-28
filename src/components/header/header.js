@@ -36,7 +36,10 @@ const Header = props => {
   return (
     <header class={style.header}>
       {currentPath !== '/' ? (
-        <Link href="/" class={style.title}>
+        <Link
+          href={auth.user !== false ? `${userId}/challenges` : `/`}
+          class={style.title}
+        >
           <Heading appearance={'H3'}>Challengemyself</Heading>
         </Link>
       ) : (
@@ -64,6 +67,12 @@ const Header = props => {
                   </div>
                 </Link>
               )}
+            <Link
+              class={style.login}
+              href={auth && auth.user && userId ? `/${userId}/challenges` : '/'}
+            >
+              Your challenges
+            </Link>
             <Link
               class={style.user}
               style={{ backgroundImage: `url('${auth.user.photoURL}')` }}

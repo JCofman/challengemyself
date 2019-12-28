@@ -10,7 +10,7 @@ const UnauthenticatedCreateChallenge = () => {
   return (
     <p class={style.root}>
       You have to authenticate before we can load this page. Please visit the
-      <Link href="/" style="margin: 0 4px">
+      <Link href={`/login`} style="margin: 0 4px">
         login
       </Link>{' '}
       page.
@@ -42,7 +42,6 @@ const AuthenticatedCreateChallenge = () => {
     // redirect to created challenge
     route(`/${userID}/challenges/${newChallenge.key}`);
   };
-
   return (
     <div class={style.root}>
       <form onSubmit={submitChallenge} class={style.form}>

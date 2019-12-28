@@ -8,6 +8,7 @@ import './app.css';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
+import Login from '../routes/login';
 import CreateChallenge from '../routes/createChallenge';
 import ChallengeView from '../routes/challengeView';
 import ChallengesOverview from '../routes/challengesOverview';
@@ -26,6 +27,7 @@ const App = () => {
         <Header currentPath={currentPath} />
         <Router onChange={handleRouteChange}>
           <Home path="/" />
+          <Login path="/login" />
           <CreateChallenge path="/create" />
           <ChallengeView path="/:userId/challenges/:challengeId" />
           <ChallengesOverview path="/:userId/challenges" />
