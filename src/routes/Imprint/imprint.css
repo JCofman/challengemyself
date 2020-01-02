@@ -1,9 +1,7 @@
 .imprint_section {
   margin-top: 80px;
-}
-
-.imprint_heading {
-
+  flex: 1 1 auto;
+  padding: 12px;
 }
 
 .imprint_text {
