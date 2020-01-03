@@ -29,7 +29,7 @@ const AuthenticatedChallengeView = () => {
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
   const { isLoading, isError, data } = useDatabaseEntry(challengeIdUrl);
-  const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
+  const [duration, name, createdDate] = data;
 
   useEffect(() => {
     const tiltElem = document.querySelector('[data-tilt]');
@@ -37,15 +37,18 @@ const AuthenticatedChallengeView = () => {
       max: 45,
     });
     // fetch bg image
-    fetch(unsplashUrl)
-      .then(response => response.json())
-      .then(json => json.urls.regular)
-      .then(picUrl => {
-        setImgUrl(picUrl);
-      });
+    if (name) {
+      const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
+      fetch(unsplashUrl)
+        .then(response => response.json())
+        .then(json => json.urls.regular)
+        .then(picUrl => {
+          setImgUrl(picUrl);
+        });
+    }
     // remove event listeners when component is removed
     return () => tiltElem.vanillaTilt.destroy();
-  }, [unsplashUrl, data]);
+  }, [data]);
 
   if (isLoading) {
     return <p>Loading your challenge...</p>;
@@ -53,8 +56,6 @@ const AuthenticatedChallengeView = () => {
   if (isError) {
     return <p> Something went wrong</p>;
   }
-
-  const [duration, name, createdDate] = data;
 
   return (
     <div class={style.root}>
