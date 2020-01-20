@@ -100,7 +100,7 @@ const CreateChallenge = () => {
   const auth = useAuth();
   return (
     <main class={style.root}>
-      {auth.user !== false ? (
+      {auth.user ? (
         <AuthenticatedCreateChallenge />
       ) : (
         <UnauthenticatedCreateChallenge />
