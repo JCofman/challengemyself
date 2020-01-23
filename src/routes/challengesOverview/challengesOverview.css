@@ -5,13 +5,13 @@
 }
 
 .root {
-  margin: 95px 20px 20px 20px; /* headline */
+  margin: 80px 20px 20px 20px; /* headline */
   color: white;
 }
 .headline {
   display: block;
   width: 100%;
-  margin-top: 0;
+  margin-top: 35px;
 }
 .gridContainer {
   display: grid;
@@ -51,6 +51,9 @@
 .item:hover .time {
   transform: scale(1.4);
 }
+.item:hover .trophyLogo {
+  transform: scale(1.4);
+}
 @keyframes fillBg {
   from {
     background-position-x: 0%;
@@ -83,6 +86,15 @@
   margin-top: 16px;
   align-self: flex-end;
   font-size: 1.2rem;
+}
+.trophyLogo {
+  position: absolute;
+  left: calc(50% - 35px);
+  top: calc(50% - 35px);
+  fill: white;
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .link {
   color: white;

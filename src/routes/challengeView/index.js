@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import tilt from 'vanilla-tilt';
 import { Link } from 'preact-router/match';
+import '@lottiefiles/lottie-player';
 
 import { useAuth } from '../../hooks/useAuth';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
@@ -73,13 +74,31 @@ const AuthenticatedChallengeView = () => {
           <div class={style.challenge__title}>
             {name ? name.toUpperCase() : '…'}
           </div>
-          <div class={style.challenge__daysToGo}>
-            {duration && createdDate
-              ? calcDaysToGo(duration, createdDate)
-              : 'XX'}
-          </div>
-          <div class={style.challenge__daysToGoDesc}>DAYS TO GO</div>
+          {calcDaysToGo(duration, createdDate) === 0 ? (
+            <lottie-player
+              class={style.challenge__trophyAnimation}
+              src="https://assets4.lottiefiles.com/datafiles/VtCIGqDsiVwFPNM/data.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px;"
+              autoplay
+            />
+          ) : (
+            <>
+              <div class={style.challenge__daysToGo}>
+                {duration && createdDate
+                  ? calcDaysToGo(duration, createdDate)
+                  : 'XX'}
+              </div>
+              <div class={style.challenge__daysToGoDesc}>DAYS TO GO</div>
+            </>
+          )}
         </div>
+        {calcDaysToGo(duration, createdDate) === 0 && (
+          <div class={style.challenge__done}>
+            Nice! You finished your {duration} days challenge!
+          </div>
+        )}
         <Link
           href={
             auth.user && auth.user.uid ? `/${auth.user.uid}/challenges` : '/'
