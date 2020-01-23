@@ -21,15 +21,6 @@ const App = () => {
     setCurrentPath(e.url);
   };
 
-  /* NOTIFICATIONS for all challenges */
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('sw.js');
-  }
-
-  Notification.requestPermission(result => {
-    localStorage.setItem('Notifications-Permission', result);
-  });
-
   return (
     <div id="app">
       <ProvideAuth>
