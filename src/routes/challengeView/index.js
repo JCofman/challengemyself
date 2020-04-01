@@ -2,7 +2,7 @@ import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import tilt from 'vanilla-tilt';
 import { Link } from 'preact-router/match';
-import '@lottiefiles/lottie-player';
+import 'lottie-web';
 
 import { useAuth } from '../../hooks/useAuth';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
@@ -74,7 +74,8 @@ const AuthenticatedChallengeView = () => {
           <div class={style.challenge__title}>
             {name ? name.toUpperCase() : '…'}
           </div>
-          {calcDaysToGo(duration, createdDate) === 0 ? (
+          {calcDaysToGo(duration, createdDate) === 0 &&
+          typeof window !== 'undefined' ? (
             <lottie-player
               class={style.challenge__trophyAnimation}
               src="https://assets4.lottiefiles.com/datafiles/VtCIGqDsiVwFPNM/data.json"
