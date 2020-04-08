@@ -1,17 +1,17 @@
 import { useState } from 'preact/hooks';
 
-const useForm = callback => {
+const useForm = (callback) => {
   const [inputs, setInputs] = useState({});
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     if (event) {
       event.preventDefault();
     }
   };
 
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     event.persist();
-    setInputs(inputs => ({
+    setInputs((inputs) => ({
       ...inputs,
       [event.target.name]: event.target.value,
     }));

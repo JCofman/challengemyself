@@ -38,9 +38,9 @@ const AuthenticatedChallengeView = () => {
     });
     // fetch bg image
     fetch(unsplashUrl)
-      .then(response => response.json())
-      .then(json => json.urls.regular)
-      .then(picUrl => {
+      .then((response) => response.json())
+      .then((json) => json.urls.regular)
+      .then((picUrl) => {
         setImgUrl(picUrl);
       });
     // remove event listeners when component is removed

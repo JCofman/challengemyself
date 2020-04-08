@@ -29,7 +29,7 @@ const fetchDatabaseEntryReducer = (state, action) => {
   }
 };
 
-export const useDatabaseEntry = entry => {
+export const useDatabaseEntry = (entry) => {
   if (!entry) return;
   const [state, dispatch] = useReducer(fetchDatabaseEntryReducer, {
     isLoading: false,
@@ -44,10 +44,10 @@ export const useDatabaseEntry = entry => {
 
     ref.on(
       'value',
-      snapshot => {
+      (snapshot) => {
         const array = [];
         // For each data in the entry
-        snapshot.forEach(el => {
+        snapshot.forEach((el) => {
           // Push the object to the array
           // If you also need to store the unique key from firebase,
           // You can use array.push({ ...el.val(), key: el.key });

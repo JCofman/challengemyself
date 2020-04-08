@@ -6,21 +6,21 @@ import { useAuth } from '../../hooks/useAuth';
 import Heading from '../../components/heading';
 import style from './style.css';
 
-const signin = auth => async e => {
+const signin = (auth) => async (e) => {
   if (auth && auth.signInWithGoogle) {
     await auth.signInWithGoogle();
     route('/create');
   }
 };
 
-const signout = auth => async e => {
+const signout = (auth) => async (e) => {
   if (auth && auth.signout) {
     await auth.signout();
     route('/');
   }
 };
 
-const Header = props => {
+const Header = (props) => {
   const auth = useAuth();
   const [userId, setUserId] = useState('');
 

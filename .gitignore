@@ -4,3 +4,4 @@ node_modules
 *.lock
 coverage
 package-lock.json
+src/challengemyself-sw.js

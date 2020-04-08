@@ -1,0 +1,176 @@
+[
+  {
+    "timestamp": 1586269662823,
+    "files": [
+      {
+        "filename": "ssr-bundle.24424.css",
+        "previous": 5708,
+        "size": 0,
+        "diff": -5708
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 125990,
+        "size": 0,
+        "diff": -125990
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 741, "diff": 741 },
+      { "filename": "sw.js", "previous": 0, "size": 738, "diff": 738 },
+      {
+        "filename": "bundle.398ac.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.8eb80.esm.js",
+        "previous": 0,
+        "size": 120472,
+        "diff": 120472
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.44667.css",
+        "previous": 0,
+        "size": 102,
+        "diff": 102
+      },
+      {
+        "filename": "route-Imprint.chunk.b181a.esm.js",
+        "previous": 0,
+        "size": 438,
+        "diff": 438
+      },
+      {
+        "filename": "route-challengeView.chunk.35050.css",
+        "previous": 0,
+        "size": 678,
+        "diff": 678
+      },
+      {
+        "filename": "route-challengeView.chunk.98f6d.esm.js",
+        "previous": 0,
+        "size": 4255,
+        "diff": 4255
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c563b.css",
+        "previous": 0,
+        "size": 683,
+        "diff": 683
+      },
+      {
+        "filename": "route-challengesOverview.chunk.76e1b.esm.js",
+        "previous": 0,
+        "size": 1654,
+        "diff": 1654
+      },
+      {
+        "filename": "route-createChallenge.chunk.eb6ba.css",
+        "previous": 0,
+        "size": 468,
+        "diff": 468
+      },
+      {
+        "filename": "route-createChallenge.chunk.49cf4.esm.js",
+        "previous": 0,
+        "size": 966,
+        "diff": 966
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.87ec5.esm.js",
+        "previous": 0,
+        "size": 1955,
+        "diff": 1955
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.3f06b.esm.js",
+        "previous": 0,
+        "size": 4236,
+        "diff": 4236
+      },
+      {
+        "filename": "bundle.f9777.js",
+        "previous": 0,
+        "size": 120467,
+        "diff": 120467
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 0,
+        "size": 2013,
+        "diff": 2013
+      },
+      {
+        "filename": "route-Imprint.chunk.4e450.js",
+        "previous": 0,
+        "size": 441,
+        "diff": 441
+      },
+      {
+        "filename": "route-challengeView.chunk.9cd98.js",
+        "previous": 0,
+        "size": 4275,
+        "diff": 4275
+      },
+      {
+        "filename": "route-challengesOverview.chunk.298a6.js",
+        "previous": 0,
+        "size": 1636,
+        "diff": 1636
+      },
+      {
+        "filename": "route-createChallenge.chunk.4861f.js",
+        "previous": 0,
+        "size": 966,
+        "diff": 966
+      },
+      {
+        "filename": "route-home.chunk.5ed0c.js",
+        "previous": 0,
+        "size": 1913,
+        "diff": 1913
+      },
+      {
+        "filename": "route-login.chunk.b0a5e.js",
+        "previous": 0,
+        "size": 4311,
+        "diff": 4311
+      }
+    ]
+  },
+  {
+    "timestamp": 1586269613568,
+    "files": [
+      {
+        "filename": "ssr-bundle.24424.css",
+        "previous": 0,
+        "size": 5708,
+        "diff": 5708
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 125990,
+        "diff": 125990
+      }
+    ]
+  }
+]

@@ -23,7 +23,7 @@ const AuthenticatedCreateChallenge = () => {
   const [duration, setDuration] = useState(100);
   const auth = useAuth();
 
-  const submitChallenge = e => {
+  const submitChallenge = (e) => {
     e.preventDefault();
     // validarte inputs
     if (name.trim() === '') return;
@@ -59,7 +59,7 @@ const AuthenticatedCreateChallenge = () => {
             id="name"
             type="text"
             value={name}
-            onchange={e => setName(e.target.value)}
+            onchange={(e) => setName(e.target.value)}
             required
             aria-label="challenge-name"
             class={style.input}
@@ -75,7 +75,7 @@ const AuthenticatedCreateChallenge = () => {
             max="365"
             step="1"
             value={duration}
-            onchange={e => setDuration(e.target.value)}
+            onchange={(e) => setDuration(e.target.value)}
             required
             aria-label="challenge-duration"
             class={style.input}
