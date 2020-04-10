@@ -1,5 +1,13 @@
 {
   "translations": {
-    "homeSlogan": "Eine Webapp die dich motiviert neue Dinge auszuprobieren und unbekannte Gebiete mit neuen Herausforderungen zu erkunden. Gib immer dein Bestes und strebe nach mehr Erfahrungen."
+    "homeSlogan": "Eine Webapp die dich motiviert neue Dinge auszuprobieren und unbekannte Gebiete mit neuen Herausforderungen zu erkunden. Gib immer dein Bestes und strebe nach mehr Erfahrungen",
+    "subSlogan": "Fordere dich heraus",
+    "createNewChallenge": "Starte eine neue Herausforderung",
+    "signIn": "Sign in",
+    "signOut": "Ausloggen",
+
+    "yourNextChallenge": "Deine nächste Herausforderung",
+    "duration": "Dauer",
+    "startChallengeToday": "Starte deine Challenge heute"
   }
 }

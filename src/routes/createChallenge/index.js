@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
+import { useTranslation } from 'react-i18next';
 
 import firebase, { useAuth } from '../../hooks/useAuth';
 import style from './createChallenge.css';
@@ -22,6 +23,7 @@ const AuthenticatedCreateChallenge = () => {
   const [name, setName] = useState('');
   const [duration, setDuration] = useState(100);
   const auth = useAuth();
+  const { t } = useTranslation();
 
   const submitChallenge = (e) => {
     e.preventDefault();
@@ -53,7 +55,7 @@ const AuthenticatedCreateChallenge = () => {
           }}
         >
           <label for="name" class={style.label}>
-            Your next challenge
+            {t('yourNextChallenge')}
           </label>
           <input
             id="name"
@@ -66,7 +68,7 @@ const AuthenticatedCreateChallenge = () => {
           />
 
           <label for="duration" class={style.label}>
-            Duration
+            {t('duration')}
           </label>
           <input
             id="duration"
@@ -88,7 +90,7 @@ const AuthenticatedCreateChallenge = () => {
             }}
             class={`${style.input} ${style.createButton}`}
           >
-            {'Start Challenge today'.toUpperCase()}
+            {t('startChallengeToday').toUpperCase()}
           </button>
         </div>
       </form>

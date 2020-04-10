@@ -58,7 +58,7 @@ const Home = () => {
       </div>
 
       <section class={style.home_section}>
-        <p class={style.home_section_highlight}>Challenge your everyday life</p>
+        <p class={style.home_section_highlight}>{t('subSlogan')}</p>
         <p class={style.home_section_test}>{t('homeSlogan')}</p>
         {auth && auth.user ? (
           <div>
@@ -67,14 +67,14 @@ const Home = () => {
               activeClassName={style.active}
               href="/create"
             >
-              Create a new Challenge
+              {t('createNewChallenge')}
             </Link>
-            <Button onClick={() => auth.signout()}>Sign out</Button>
+            <Button onClick={() => auth.signout()}> {t('signOut')}</Button>
           </div>
         ) : (
           auth && (
             <Link href="/login" class={style.signin}>
-              Sign in
+              {t('signIn')}
             </Link>
           )
         )}

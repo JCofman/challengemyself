@@ -1,5 +1,12 @@
 {
   "translations": {
-    "homeSlogan": "A webpage for creating and keeping motivation. For trying out new things, exploring uncharted territories with new challenges. Always giving the best you can and reaching out for more experiences."
+    "homeSlogan": "A webpage for creating and keeping motivation. For trying out new things, exploring uncharted territories with new challenges. Always giving the best you can and reaching out for more experiences.",
+    "subSlogan": "Challenge your everyday life",
+    "createNewChallenge": "Create a new Challenge",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "yourNextChallenge": "Your next challenge",
+    "duration": "Duration",
+    "startChallengeToday": "Start your challenge today"
   }
 }
