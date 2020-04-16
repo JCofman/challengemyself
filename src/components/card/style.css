@@ -7,6 +7,6 @@
   border-radius: 0.4rem;
   color: white;
   text-decoration: transparent;
-  backdrop-filter: blur(10px);
+  backdrop-filter: saturate(180%) blur(20px); /* apple blur style https://snack.expo.io/@bacon/blur-filters-next */
   overflow: hidden;
 }

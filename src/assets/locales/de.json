@@ -1,0 +1,25 @@
+{
+  "translations": {
+    "homeSlogan": "Eine Webapp die dich motiviert neue Dinge auszuprobieren und unbekannte Gebiete mit neuen Herausforderungen zu erkunden. Gib immer dein Bestes und strebe nach mehr Erfahrungen",
+    "subSlogan": "Fordere dich heraus",
+    "createNewChallenge": "Starte eine neue Herausforderung",
+    "signIn": "Sign in",
+    "signInWith": "Sign in with",
+    "signOut": "Ausloggen",
+
+    "yourNextChallenge": "Deine nächste Herausforderung",
+    "duration": "Dauer",
+    "startChallengeToday": "Starte deine Challenge heute",
+    "yourChallenges": "Deine Herausforderungen",
+    "loadingYourChallenge": "Lade deine Herausforderung...",
+    "loadingYourChallenges": "Lade deine Herausforderungen...",
+    "error": "Sorry! Etwas ist schief gelaufen",
+    "challengeFinished": "Sehr gut! Glückwunsch du hast deine {{duration}} Tage Herausforderung bewältigt!",
+    "backToOverview": "Zurück zur übersicht",
+    "youHaveToAuthenticate": "Du musst dich einloggen bevor du deine Herausforderung sehen kannst. Bitte besuche die <1>Login</1> Seite.",
+    "YouHveToAuthenticateOverview": "You have to authenticate before we can load your challenges go to login page <1>here</1>.",
+    "daysToGo": "Verbleibende Tage",
+    "youDontHaveAnyChallenges": "You don't have any challenges yet! Go create one! 💪",
+    "startedOn": "Gestartet am"
+  }
+}

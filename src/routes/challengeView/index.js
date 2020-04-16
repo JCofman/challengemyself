@@ -3,6 +3,7 @@ import { useState, useEffect } from 'preact/hooks';
 import tilt from 'vanilla-tilt';
 import { Link } from 'preact-router/match';
 import 'lottie-web';
+import { useTranslation, Trans } from 'react-i18next';
 
 import { useAuth } from '../../hooks/useAuth';
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
@@ -14,11 +15,13 @@ import style from './challengeView.css';
 const UnauthenticatedChallengeView = () => {
   return (
     <p class={style.root}>
-      You have to authenticate before we can load this page. Please visit the
-      <Link href={`/login`} style="margin: 0 4px">
-        login
-      </Link>{' '}
-      page.
+      <Trans>
+        You have to authenticate before we can load this page. Please visit the
+        <Link href={`/login`} style="margin: 0 4px">
+          login
+        </Link>
+        page.
+      </Trans>
     </p>
   );
 };
@@ -26,6 +29,8 @@ const UnauthenticatedChallengeView = () => {
 const AuthenticatedChallengeView = () => {
   const auth = useAuth();
   const [imgUrl, setImgUrl] = useState('');
+  const { t } = useTranslation();
+
   const clientId =
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
@@ -41,9 +46,9 @@ const AuthenticatedChallengeView = () => {
     if (name) {
       const unsplashUrl = `https://api.unsplash.com/photos/random?client_id=${clientId}&query=${name}`;
       fetch(unsplashUrl)
-        .then(response => response.json())
-        .then(json => json.urls.regular)
-        .then(picUrl => {
+        .then((response) => response.json())
+        .then((json) => json.urls.regular)
+        .then((picUrl) => {
           setImgUrl(picUrl);
         });
     }
@@ -52,10 +57,10 @@ const AuthenticatedChallengeView = () => {
   }, [data]);
 
   if (isLoading) {
-    return <p>Loading your challenge...</p>;
+    return <p>{t('loadingYourChallenge')}</p>;
   }
   if (isError) {
-    return <p> Something went wrong</p>;
+    return <p>{t('error')}</p>;
   }
 
   return (
@@ -97,7 +102,9 @@ const AuthenticatedChallengeView = () => {
         </div>
         {calcDaysToGo(duration, createdDate) === 0 && (
           <div class={style.challenge__done}>
-            Nice! You finished your {duration} days challenge!
+            <Trans i18nKey="challengeFinished" duration={duration}>
+              Nice! You finished your {{ duration }} days challenge!
+            </Trans>
           </div>
         )}
         <Link
@@ -106,7 +113,7 @@ const AuthenticatedChallengeView = () => {
           }
           class={style.challenge__backToOverview}
         >
-          Back to Overview
+          {t('backToOverview')}
         </Link>
       </div>
     </div>

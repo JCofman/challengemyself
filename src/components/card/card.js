@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import style from './style';
 
-const Card = props => {
+const Card = (props) => {
   return <div class={style.card}>{props.children}</div>;
 };
 

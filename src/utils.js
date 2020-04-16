@@ -19,7 +19,7 @@ export const calcDaysToGo = (duration, createdTimestamp) => {
  * Formats the date into dd.mm.yyy format
  * @param {Date} date
  */
-export const formatDate = date => {
+export const formatDate = (date) => {
   let d = new Date(date),
     month = '' + (d.getMonth() + 1),
     day = '' + d.getDate(),

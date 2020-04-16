@@ -1,0 +1,23 @@
+{
+  "translations": {
+    "homeSlogan": "A webpage for creating and keeping motivation. For trying out new things, exploring uncharted territories with new challenges. Always giving the best you can and reaching out for more experiences.",
+    "subSlogan": "Challenge your everyday life",
+    "createNewChallenge": "Create a new Challenge",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "yourNextChallenge": "Your next challenge",
+    "duration": "Duration",
+    "startChallengeToday": "Start your challenge today",
+    "yourChallenges": "Your challenges",
+    "loadingYourChallenge": "Loading your challenge...",
+    "loadingYourChallenges": "Loading your challenges...",
+    "error": "Something went wrong",
+    "challengeFinished": "Nice! You finished your {{duration}} days challenge!",
+    "backToOverview": "Back to overview",
+    "youHaveToAuthenticate": "You have to authenticate before we can load this page. Please visit the <1>login</1> page.",
+    "YouHveToAuthenticateOverview": "You have to authenticate before we can load your challenges go to login page <1>here</1>.",
+    "daysToGo": "Days to go",
+    "youDontHaveAnyChallenges": "You don't have any challenges yet! Go create one! 💪",
+    "startedOn": "Started on"
+  }
+}

@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
+import { useTranslation } from 'react-i18next';
 
 import { useDatabaseEntry } from '../../hooks/useDatabaseEntry';
 import { useAuth } from '../../hooks/useAuth';
@@ -11,6 +12,8 @@ import style from './style';
 
 const Home = () => {
   const auth = useAuth();
+  const { t } = useTranslation();
+
   const [userId, setUserId] = useState('');
   let currentChallenges = useDatabaseEntry(userId);
   useEffect(() => {
@@ -55,12 +58,8 @@ const Home = () => {
       </div>
 
       <section class={style.home_section}>
-        <p class={style.home_section_highlight}>Challenge your everyday life</p>
-        <p class={style.home_section_test}>
-          A webpage for creating and keeping motivation. For trying out new
-          things, exploring uncharted territories with new challenges. Always
-          giving the best you can and reaching out for more experiences.
-        </p>
+        <p class={style.home_section_highlight}>{t('subSlogan')}</p>
+        <p class={style.home_section_test}>{t('homeSlogan')}</p>
         {auth && auth.user ? (
           <div>
             <Link
@@ -68,14 +67,14 @@ const Home = () => {
               activeClassName={style.active}
               href="/create"
             >
-              Create a new Challenge
+              {t('createNewChallenge')}
             </Link>
-            <Button onClick={() => auth.signout()}>Sign out</Button>
+            <Button onClick={() => auth.signout()}> {t('signOut')}</Button>
           </div>
         ) : (
           auth && (
             <Link href="/login" class={style.signin}>
-              Sign in
+              {t('signIn')}
             </Link>
           )
         )}

@@ -7,7 +7,7 @@ describe('Heading', () => {
   test('Heading renders with header tags Tag', () => {
     const appearances = [`H1`, `H2`, `H3`, `H4`, `H5`];
 
-    appearances.forEach(appearance => {
+    appearances.forEach((appearance) => {
       const { getByText } = render(
         <Heading appearance={appearance}>Test</Heading>
       );

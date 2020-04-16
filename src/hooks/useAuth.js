@@ -55,7 +55,7 @@ function useProvideAuth() {
     return firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(response => {
+      .then((response) => {
         setUser(response.user);
         return {
           data: response.user,
@@ -63,7 +63,7 @@ function useProvideAuth() {
           errorMessage: '',
         };
       })
-      .catch(error => {
+      .catch((error) => {
         const { message: errorMessage } = error;
         return {
           data: null,
@@ -79,7 +79,7 @@ function useProvideAuth() {
     return firebase
       .auth()
       .signInWithPopup(googleProvider)
-      .then(response => {
+      .then((response) => {
         setUser(response.user);
         return {
           data: response.user,
@@ -87,7 +87,7 @@ function useProvideAuth() {
           errorMessage: '',
         };
       })
-      .catch(error => {
+      .catch((error) => {
         const { message: errorMessage } = error;
         return {
           data: null,
@@ -105,7 +105,7 @@ function useProvideAuth() {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(response => {
+      .then((response) => {
         setUser(response.user);
         return {
           data: response.user,
@@ -113,7 +113,7 @@ function useProvideAuth() {
           errorMessage: '',
         };
       })
-      .catch(error => {
+      .catch((error) => {
         const { message: errorMessage } = error;
         return {
           data: null,
@@ -130,7 +130,7 @@ function useProvideAuth() {
         setUser(false);
       });
   };
-  const sendPasswordResetEmail = email =>
+  const sendPasswordResetEmail = (email) =>
     firebase
       .auth()
       .sendPasswordResetEmail(email)
@@ -147,7 +147,7 @@ function useProvideAuth() {
   // ... component that utilizes this hook to re-render with the ...
   // ... latest auth object.
   useEffect(() => {
-    const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
       } else {
