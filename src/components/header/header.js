@@ -2,7 +2,10 @@ import { useState, useEffect } from 'preact/hooks';
 import { h } from 'preact';
 import { route } from 'preact-router';
 import { Link } from 'preact-router/match';
+import { useTranslation } from 'react-i18next';
+
 import { useAuth } from '../../hooks/useAuth';
+
 import Heading from '../../components/heading';
 import style from './style.css';
 
@@ -23,6 +26,7 @@ const signout = (auth) => async (e) => {
 const Header = (props) => {
   const auth = useAuth();
   const [userId, setUserId] = useState('');
+  const { t } = useTranslation();
 
   const { currentPath } = props;
 
@@ -71,7 +75,7 @@ const Header = (props) => {
               class={style.login}
               href={auth && auth.user && userId ? `/${userId}/challenges` : '/'}
             >
-              Your challenges
+              {t('yourChallenges')}
             </Link>
             <Link
               class={style.user}
@@ -79,13 +83,13 @@ const Header = (props) => {
               href={auth && auth.user && userId ? `/${userId}/challenges` : '/'}
             />
             <Link class={style.login} onClick={signout(auth)}>
-              Sign out
+              {t('signOut')}
             </Link>
           </>
         ) : (
           auth && (
             <Link class={style.login} onClick={signin(auth)}>
-              Sign in with Google
+              {t('signInWith')} Google
             </Link>
           )
         )}
