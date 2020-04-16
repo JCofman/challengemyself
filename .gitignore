@@ -5,3 +5,5 @@ node_modules
 coverage
 package-lock.json
 src/challengemyself-sw.js
+.DS_Store
+size-plugin.json
