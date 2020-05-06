@@ -53,3 +53,7 @@
   transform: scale(1.1);
   background-color: var(--primary);
 }
+.timePicker {
+  display: flex;
+  flex-direction: 'column';
+}

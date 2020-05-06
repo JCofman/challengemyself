@@ -2,12 +2,12 @@
 
 import { createContext } from 'preact';
 import { useState, useEffect, useContext } from 'preact/hooks';
+
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
-
+import 'firebase/messaging';
 // Add your Firebase credentials
-
 let googleProvider;
 let authContext;
 if (typeof window !== 'undefined') {
@@ -42,8 +42,6 @@ export const useAuth = () => useContext(authContext);
 // Provider hook that creates auth object and handles state
 function useProvideAuth() {
   const [user, setUser] = useState(null);
-  // Wrap any Firebase methods we want to use making sure ...
-  // ... to save the user to state.
 
   /**
    * tries to authenticate with usercredentials.

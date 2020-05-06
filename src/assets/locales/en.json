@@ -18,6 +18,9 @@
     "YouHveToAuthenticateOverview": "You have to authenticate before we can load your challenges go to login page <1>here</1>.",
     "daysToGo": "Days to go",
     "youDontHaveAnyChallenges": "You don't have any challenges yet! Go create one! 💪",
-    "startedOn": "Started on"
+    "startedOn": "Started on",
+    "notify": "Send push notifications",
+    "timeZone": "Timezone",
+    "time": "Time"
   }
 }
