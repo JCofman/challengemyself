@@ -12,10 +12,10 @@ import './app.css';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Login from '../routes/login';
-import CreateChallenge from '../routes/createChallenge';
-import ChallengeView from '../routes/challengeView';
-import ChallengesOverview from '../routes/challengesOverview';
-import Imprint from '../routes/Imprint';
+import CreateChallenge from 'async!../routes/createChallenge';
+import ChallengeView from 'async!../routes/challengeView';
+import ChallengesOverview from 'async!../routes/challengesOverview';
+import Imprint from 'async!../routes/Imprint';
 
 const App = () => {
   const [currentPath, setCurrentPath] = useState('/');

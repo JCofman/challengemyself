@@ -5,7 +5,7 @@ import { useState, useEffect, useContext } from 'preact/hooks';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
-
+import 'firebase/messaging';
 // Add your Firebase credentials
 
 let googleProvider;

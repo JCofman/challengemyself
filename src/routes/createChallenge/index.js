@@ -5,6 +5,8 @@ import { Link } from 'preact-router/match';
 import { useTranslation } from 'react-i18next';
 
 import firebase, { useAuth } from '../../hooks/useAuth';
+import { timeOptions, timeZones } from '../../utils';
+
 import style from './createChallenge.css';
 
 const UnauthenticatedCreateChallenge = () => {
@@ -22,6 +24,10 @@ const UnauthenticatedCreateChallenge = () => {
 const AuthenticatedCreateChallenge = () => {
   const [name, setName] = useState('');
   const [duration, setDuration] = useState(100);
+  const [notificationTime, setNotificationTime] = useState(timeOptions[0]);
+  const [timeZone, setTimeZone] = useState(timeZones[0].value);
+  const [shouldNotify, setNotify] = useState(false);
+
   const auth = useAuth();
   const { t } = useTranslation();
 
@@ -33,6 +39,7 @@ const AuthenticatedCreateChallenge = () => {
 
     const userID = auth.user.uid;
     const ref = firebase.database().ref(`${userID}/challenges`);
+
     const newChallenge = ref.push();
     const startDate = new Date().getTime();
     // Pushing an object to firebase with a random number
@@ -40,10 +47,14 @@ const AuthenticatedCreateChallenge = () => {
       name,
       duration,
       startDate,
+      shouldNotify,
+      notificationTime,
+      timeZone,
     });
     // redirect to created challenge
     route(`/${userID}/challenges/${newChallenge.key}`);
   };
+
   return (
     <div class={style.root}>
       <form onSubmit={submitChallenge} class={style.form}>
@@ -82,6 +93,87 @@ const AuthenticatedCreateChallenge = () => {
             aria-label="challenge-duration"
             class={style.input}
           />
+
+          <div class={style.timePicker}>
+            <span>
+              <label for="notify" class={style.label}>
+                {t('notify')}
+              </label>
+              <input
+                id="notify"
+                type="checkbox"
+                value={shouldNotify}
+                onchange={() => {
+                  // Let's check if the browser supports notifications
+                  const messaging = firebase.messaging();
+
+                  if (!('Notification' in window)) {
+                    // eslint-disable-next-line no-alert
+                    alert('This browser does not support desktop notification');
+                  } else if (Notification.permission === 'granted') {
+                    setNotify(!shouldNotify);
+                    messaging.getToken().then((currentToken) => {
+                      const userID = auth.user.uid;
+                      // add notificationToken
+                      firebase
+                        .database()
+                        .ref(`${userID}/notificationTokens/${currentToken}`)
+                        .set(true);
+                    });
+                  } else {
+                    Notification.requestPermission((result) => {
+                      if (result === 'granted') {
+                        setNotify(!shouldNotify);
+                      }
+                      localStorage.setItem('Notifications-Permission', result);
+                    });
+                  }
+                }}
+                aria-label="challenge-notification"
+              />
+            </span>
+          </div>
+
+          {shouldNotify && (
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <div>
+                <label for="hour">{t('time')}</label>
+                <select
+                  id="hour"
+                  name="hour"
+                  value={notificationTime}
+                  onchange={(e) => {
+                    setNotificationTime(e.target.value);
+                  }}
+                >
+                  {timeOptions.map((val) => {
+                    return <option value={val}>{val}:00</option>;
+                  })}
+                </select>
+              </div>
+              <div>
+                <label for="timezone">{t('timeZone')}</label>
+                <select
+                  id="timezone"
+                  name="timezone"
+                  value={timeZone}
+                  onchange={(e) => {
+                    setTimeZone(e.target.value);
+                  }}
+                >
+                  {timeZones.map((val) => {
+                    return <option value={val.value}>{val.label}</option>;
+                  })}
+                </select>
+              </div>
+            </div>
+          )}
 
           <button
             type="submit"
