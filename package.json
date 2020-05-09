@@ -55,8 +55,7 @@
     "react-hook-use-service-worker": "^0.2.1",
     "react-i18next": "^11.4.0",
     "react-icons": "^3.10.0",
-    "vanilla-tilt": "^1.7.0",
-    "whatwg-fetch": "2.0.4"
+    "vanilla-tilt": "^1.7.0"
   },
   "jest": {
     "preset": "jest-preset-preact"
