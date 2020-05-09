@@ -6,6 +6,7 @@ importScripts(
 );
 // Initialize the Firebase app in the service worker by passing in the
 // messagingSenderId.
+
 firebase.initializeApp({
   apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
   authDomain: 'challengemyself-f65a8.firebaseapp.com',

@@ -1,5 +1,2899 @@
 [
   {
+    "timestamp": 1589057014260,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 879, "size": 879, "diff": 0 },
+      { "filename": "sw.js", "previous": 876, "size": 876, "diff": 0 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 2415,
+        "diff": 0
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 2012,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 131,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 424,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 719,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 750,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 501,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 1101,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 717,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 224,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 2013,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 426,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 221,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 220,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 223,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.9fc71.esm.js",
+        "previous": 149533,
+        "size": 0,
+        "diff": -149533
+      },
+      {
+        "filename": "route-challengeView.chunk.fb966.esm.js",
+        "previous": 72139,
+        "size": 72139,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c3c76.esm.js",
+        "previous": 6629,
+        "size": 6629,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.9b8f8.esm.js",
+        "previous": 3002,
+        "size": 0,
+        "diff": -3002
+      },
+      {
+        "filename": "route-home.chunk.a0f57.esm.js",
+        "previous": 1864,
+        "size": 1864,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.da0ab.esm.js",
+        "previous": 2475,
+        "size": 2475,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.865c2.js",
+        "previous": 149651,
+        "size": 0,
+        "diff": -149651
+      },
+      {
+        "filename": "route-challengeView.chunk.704fc.js",
+        "previous": 72198,
+        "size": 72198,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.9a202.js",
+        "previous": 6625,
+        "size": 6625,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.6e31c.js",
+        "previous": 3009,
+        "size": 0,
+        "diff": -3009
+      },
+      {
+        "filename": "route-home.chunk.72fbf.js",
+        "previous": 1817,
+        "size": 1817,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.699a1.js",
+        "previous": 2551,
+        "size": 2551,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.46205.esm.js",
+        "previous": 0,
+        "size": 149534,
+        "diff": 149534
+      },
+      {
+        "filename": "route-createChallenge.chunk.b26d9.esm.js",
+        "previous": 0,
+        "size": 2994,
+        "diff": 2994
+      },
+      {
+        "filename": "bundle.13f7b.js",
+        "previous": 0,
+        "size": 149652,
+        "diff": 149652
+      },
+      {
+        "filename": "route-createChallenge.chunk.03d46.js",
+        "previous": 0,
+        "size": 2998,
+        "diff": 2998
+      }
+    ]
+  },
+  {
+    "timestamp": 1589056593606,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 742, "size": 879, "diff": 137 },
+      { "filename": "sw.js", "previous": 738, "size": 876, "diff": 138 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 2415,
+        "diff": 0
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 2012,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 131,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 424,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 719,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 72127,
+        "size": 0,
+        "diff": -72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 750,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 6619,
+        "size": 0,
+        "diff": -6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 501,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 2940,
+        "size": 0,
+        "diff": -2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 1101,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 1864,
+        "size": 0,
+        "diff": -1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 717,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 2460,
+        "size": 0,
+        "diff": -2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 224,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 2013,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 426,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 72188,
+        "size": 0,
+        "diff": -72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 6613,
+        "size": 0,
+        "diff": -6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 2949,
+        "size": 0,
+        "diff": -2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 1815,
+        "size": 0,
+        "diff": -1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 221,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 220,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 223,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.50b7c.esm.js",
+        "previous": 147970,
+        "size": 0,
+        "diff": -147970
+      },
+      {
+        "filename": "bundle.21e33.js",
+        "previous": 148089,
+        "size": 0,
+        "diff": -148089
+      },
+      {
+        "filename": "bundle.9fc71.esm.js",
+        "previous": 0,
+        "size": 149533,
+        "diff": 149533
+      },
+      {
+        "filename": "route-challengeView.chunk.fb966.esm.js",
+        "previous": 0,
+        "size": 72139,
+        "diff": 72139
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c3c76.esm.js",
+        "previous": 0,
+        "size": 6629,
+        "diff": 6629
+      },
+      {
+        "filename": "route-createChallenge.chunk.9b8f8.esm.js",
+        "previous": 0,
+        "size": 3002,
+        "diff": 3002
+      },
+      {
+        "filename": "route-home.chunk.a0f57.esm.js",
+        "previous": 0,
+        "size": 1864,
+        "diff": 1864
+      },
+      {
+        "filename": "route-login.chunk.da0ab.esm.js",
+        "previous": 0,
+        "size": 2475,
+        "diff": 2475
+      },
+      {
+        "filename": "bundle.865c2.js",
+        "previous": 0,
+        "size": 149651,
+        "diff": 149651
+      },
+      {
+        "filename": "route-challengeView.chunk.704fc.js",
+        "previous": 0,
+        "size": 72198,
+        "diff": 72198
+      },
+      {
+        "filename": "route-challengesOverview.chunk.9a202.js",
+        "previous": 0,
+        "size": 6625,
+        "diff": 6625
+      },
+      {
+        "filename": "route-createChallenge.chunk.6e31c.js",
+        "previous": 0,
+        "size": 3009,
+        "diff": 3009
+      },
+      {
+        "filename": "route-home.chunk.72fbf.js",
+        "previous": 0,
+        "size": 1817,
+        "diff": 1817
+      },
+      {
+        "filename": "route-login.chunk.699a1.js",
+        "previous": 0,
+        "size": 2551,
+        "diff": 2551
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953559881,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 742, "size": 742, "diff": 0 },
+      { "filename": "sw.js", "previous": 738, "size": 738, "diff": 0 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 2415,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 148028,
+        "size": 0,
+        "diff": -148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 2012,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 131,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 424,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 719,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 72127,
+        "size": 72127,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 750,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 6619,
+        "size": 6619,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 501,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 2940,
+        "size": 2940,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 1101,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 1864,
+        "size": 1864,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 717,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 2460,
+        "size": 2460,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 224,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 148131,
+        "size": 0,
+        "diff": -148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 2013,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 426,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 72188,
+        "size": 72188,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 6613,
+        "size": 6613,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 2949,
+        "size": 2949,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 1815,
+        "size": 1815,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 2533,
+        "size": 2533,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 221,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 220,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 223,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.50b7c.esm.js",
+        "previous": 0,
+        "size": 147970,
+        "diff": 147970
+      },
+      {
+        "filename": "bundle.21e33.js",
+        "previous": 0,
+        "size": 148089,
+        "diff": 148089
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953452262,
+    "files": [
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 5829,
+        "size": 0,
+        "diff": -5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 222117,
+        "size": 0,
+        "diff": -222117
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 742, "diff": 742 },
+      { "filename": "sw.js", "previous": 0, "size": 738, "diff": 738 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 0,
+        "size": 148028,
+        "diff": 148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 0,
+        "size": 131,
+        "diff": 131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 0,
+        "size": 424,
+        "diff": 424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 0,
+        "size": 719,
+        "diff": 719
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 0,
+        "size": 72127,
+        "diff": 72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 0,
+        "size": 750,
+        "diff": 750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 0,
+        "size": 6619,
+        "diff": 6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 0,
+        "size": 501,
+        "diff": 501
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 0,
+        "size": 2940,
+        "diff": 2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 0,
+        "size": 1864,
+        "diff": 1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 0,
+        "size": 2460,
+        "diff": 2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 0,
+        "size": 148131,
+        "diff": 148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 0,
+        "size": 2013,
+        "diff": 2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 0,
+        "size": 426,
+        "diff": 426
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 0,
+        "size": 72188,
+        "diff": 72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 0,
+        "size": 6613,
+        "diff": 6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 0,
+        "size": 2949,
+        "diff": 2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 0,
+        "size": 1815,
+        "diff": 1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 0,
+        "size": 2533,
+        "diff": 2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 0,
+        "size": 220,
+        "diff": 220
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 0,
+        "size": 223,
+        "diff": 223
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953418963,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 742, "size": 0, "diff": -742 },
+      { "filename": "sw.js", "previous": 738, "size": 0, "diff": -738 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 0,
+        "diff": -2415
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 148028,
+        "size": 0,
+        "diff": -148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 0,
+        "diff": -131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 0,
+        "diff": -424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 0,
+        "diff": -719
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 72127,
+        "size": 0,
+        "diff": -72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 0,
+        "diff": -750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 6619,
+        "size": 0,
+        "diff": -6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 0,
+        "diff": -501
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 2940,
+        "size": 0,
+        "diff": -2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 0,
+        "diff": -1101
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 1864,
+        "size": 0,
+        "diff": -1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 0,
+        "diff": -717
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 2460,
+        "size": 0,
+        "diff": -2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 0,
+        "diff": -225
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 0,
+        "diff": -225
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 148131,
+        "size": 0,
+        "diff": -148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 0,
+        "diff": -2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 0,
+        "diff": -426
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 72188,
+        "size": 0,
+        "diff": -72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 6613,
+        "size": 0,
+        "diff": -6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 2949,
+        "size": 0,
+        "diff": -2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 1815,
+        "size": 0,
+        "diff": -1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 0,
+        "diff": -220
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 0,
+        "diff": -223
+      },
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 0,
+        "size": 5829,
+        "diff": 5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 222117,
+        "diff": 222117
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953275575,
+    "files": [
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 5829,
+        "size": 0,
+        "diff": -5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 222117,
+        "size": 0,
+        "diff": -222117
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 742, "diff": 742 },
+      { "filename": "sw.js", "previous": 0, "size": 738, "diff": 738 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 0,
+        "size": 148028,
+        "diff": 148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 0,
+        "size": 131,
+        "diff": 131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 0,
+        "size": 424,
+        "diff": 424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 0,
+        "size": 719,
+        "diff": 719
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 0,
+        "size": 72127,
+        "diff": 72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 0,
+        "size": 750,
+        "diff": 750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 0,
+        "size": 6619,
+        "diff": 6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 0,
+        "size": 501,
+        "diff": 501
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 0,
+        "size": 2940,
+        "diff": 2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 0,
+        "size": 1864,
+        "diff": 1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 0,
+        "size": 2460,
+        "diff": 2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 0,
+        "size": 148131,
+        "diff": 148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 0,
+        "size": 2013,
+        "diff": 2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 0,
+        "size": 426,
+        "diff": 426
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 0,
+        "size": 72188,
+        "diff": 72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 0,
+        "size": 6613,
+        "diff": 6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 0,
+        "size": 2949,
+        "diff": 2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 0,
+        "size": 1815,
+        "diff": 1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 0,
+        "size": 2533,
+        "diff": 2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 0,
+        "size": 220,
+        "diff": 220
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 0,
+        "size": 223,
+        "diff": 223
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953243118,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 742, "size": 0, "diff": -742 },
+      { "filename": "sw.js", "previous": 738, "size": 0, "diff": -738 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 0,
+        "diff": -2415
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 0,
+        "diff": -131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 0,
+        "diff": -424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 0,
+        "diff": -719
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 72127,
+        "size": 0,
+        "diff": -72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 0,
+        "diff": -750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 6619,
+        "size": 0,
+        "diff": -6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 0,
+        "diff": -501
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 2940,
+        "size": 0,
+        "diff": -2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 0,
+        "diff": -1101
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 1864,
+        "size": 0,
+        "diff": -1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 0,
+        "diff": -717
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 2460,
+        "size": 0,
+        "diff": -2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 0,
+        "diff": -225
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 0,
+        "diff": -225
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 0,
+        "diff": -2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 0,
+        "diff": -426
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 72188,
+        "size": 0,
+        "diff": -72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 6613,
+        "size": 0,
+        "diff": -6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 2949,
+        "size": 0,
+        "diff": -2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 1815,
+        "size": 0,
+        "diff": -1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 0,
+        "diff": -220
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 0,
+        "diff": -223
+      },
+      {
+        "filename": "bundle.50b7c.esm.js",
+        "previous": 147970,
+        "size": 0,
+        "diff": -147970
+      },
+      {
+        "filename": "bundle.21e33.js",
+        "previous": 148089,
+        "size": 0,
+        "diff": -148089
+      },
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 0,
+        "size": 5829,
+        "diff": 5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 222117,
+        "diff": 222117
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953160463,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 742, "size": 742, "diff": 0 },
+      { "filename": "sw.js", "previous": 738, "size": 738, "diff": 0 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 2415,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 148028,
+        "size": 0,
+        "diff": -148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 2012,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 131,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 424,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 719,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 72127,
+        "size": 72127,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 750,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 6619,
+        "size": 6619,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 501,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 2940,
+        "size": 2940,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 1101,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 1864,
+        "size": 1864,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 717,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 2460,
+        "size": 2460,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 224,
+        "size": 224,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 225,
+        "size": 225,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 148131,
+        "size": 0,
+        "diff": -148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 2013,
+        "diff": 0
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 426,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 72188,
+        "size": 72188,
+        "diff": 0
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 6613,
+        "size": 6613,
+        "diff": 0
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 2949,
+        "size": 2949,
+        "diff": 0
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 1815,
+        "size": 1815,
+        "diff": 0
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 2533,
+        "size": 2533,
+        "diff": 0
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 221,
+        "size": 221,
+        "diff": 0
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 220,
+        "size": 220,
+        "diff": 0
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 222,
+        "size": 222,
+        "diff": 0
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 223,
+        "size": 223,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.50b7c.esm.js",
+        "previous": 0,
+        "size": 147970,
+        "diff": 147970
+      },
+      {
+        "filename": "bundle.21e33.js",
+        "previous": 0,
+        "size": 148089,
+        "diff": 148089
+      }
+    ]
+  },
+  {
+    "timestamp": 1588953002449,
+    "files": [
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 5829,
+        "size": 0,
+        "diff": -5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 222117,
+        "size": 0,
+        "diff": -222117
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 742, "diff": 742 },
+      { "filename": "sw.js", "previous": 0, "size": 738, "diff": 738 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.b18ca.esm.js",
+        "previous": 0,
+        "size": 148028,
+        "diff": 148028
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 0,
+        "size": 131,
+        "diff": 131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 0,
+        "size": 424,
+        "diff": 424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 0,
+        "size": 719,
+        "diff": 719
+      },
+      {
+        "filename": "route-challengeView.chunk.1887c.esm.js",
+        "previous": 0,
+        "size": 72127,
+        "diff": 72127
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 0,
+        "size": 750,
+        "diff": 750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c8d7d.esm.js",
+        "previous": 0,
+        "size": 6619,
+        "diff": 6619
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 0,
+        "size": 501,
+        "diff": 501
+      },
+      {
+        "filename": "route-createChallenge.chunk.ce9d4.esm.js",
+        "previous": 0,
+        "size": 2940,
+        "diff": 2940
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.9cdac.esm.js",
+        "previous": 0,
+        "size": 1864,
+        "diff": 1864
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.34531.esm.js",
+        "previous": 0,
+        "size": 2460,
+        "diff": 2460
+      },
+      {
+        "filename": "8.chunk.a84b7.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "9.chunk.9784f.esm.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "10.chunk.eb72d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "11.chunk.16f2d.esm.js",
+        "previous": 0,
+        "size": 225,
+        "diff": 225
+      },
+      {
+        "filename": "bundle.e31d9.js",
+        "previous": 0,
+        "size": 148131,
+        "diff": 148131
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 0,
+        "size": 2013,
+        "diff": 2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 0,
+        "size": 426,
+        "diff": 426
+      },
+      {
+        "filename": "route-challengeView.chunk.3eb7b.js",
+        "previous": 0,
+        "size": 72188,
+        "diff": 72188
+      },
+      {
+        "filename": "route-challengesOverview.chunk.6b31a.js",
+        "previous": 0,
+        "size": 6613,
+        "diff": 6613
+      },
+      {
+        "filename": "route-createChallenge.chunk.b0822.js",
+        "previous": 0,
+        "size": 2949,
+        "diff": 2949
+      },
+      {
+        "filename": "route-home.chunk.890e8.js",
+        "previous": 0,
+        "size": 1815,
+        "diff": 1815
+      },
+      {
+        "filename": "route-login.chunk.16d6b.js",
+        "previous": 0,
+        "size": 2533,
+        "diff": 2533
+      },
+      {
+        "filename": "8.chunk.a84b7.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "9.chunk.9784f.js",
+        "previous": 0,
+        "size": 220,
+        "diff": 220
+      },
+      {
+        "filename": "10.chunk.eb72d.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "11.chunk.16f2d.js",
+        "previous": 0,
+        "size": 223,
+        "diff": 223
+      }
+    ]
+  },
+  {
+    "timestamp": 1588952947791,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 1123, "size": 0, "diff": -1123 },
+      { "filename": "sw.js", "previous": 1121, "size": 0, "diff": -1121 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 0,
+        "diff": -2415
+      },
+      {
+        "filename": "bundle.95c9a.esm.js",
+        "previous": 148023,
+        "size": 0,
+        "diff": -148023
+      },
+      {
+        "filename": "polyfills.989dd.esm.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 0,
+        "diff": -131
+      },
+      {
+        "filename": "route-Imprint.chunk.9c067.esm.js",
+        "previous": 424,
+        "size": 0,
+        "diff": -424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 0,
+        "diff": -719
+      },
+      {
+        "filename": "route-challengeView.chunk.f389f.esm.js",
+        "previous": 72123,
+        "size": 0,
+        "diff": -72123
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 0,
+        "diff": -750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.fbd0a.esm.js",
+        "previous": 6618,
+        "size": 0,
+        "diff": -6618
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 0,
+        "diff": -501
+      },
+      {
+        "filename": "route-createChallenge.chunk.dbd51.esm.js",
+        "previous": 2944,
+        "size": 0,
+        "diff": -2944
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 0,
+        "diff": -1101
+      },
+      {
+        "filename": "route-home.chunk.934d9.esm.js",
+        "previous": 1867,
+        "size": 0,
+        "diff": -1867
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 0,
+        "diff": -717
+      },
+      {
+        "filename": "route-login.chunk.7ad80.esm.js",
+        "previous": 2459,
+        "size": 0,
+        "diff": -2459
+      },
+      {
+        "filename": "8.chunk.7ed17.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "9.chunk.36405.esm.js",
+        "previous": 223,
+        "size": 0,
+        "diff": -223
+      },
+      {
+        "filename": "10.chunk.4b2e3.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "11.chunk.bec9c.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "bundle.28c20.js",
+        "previous": 148125,
+        "size": 0,
+        "diff": -148125
+      },
+      {
+        "filename": "polyfills.84c13.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.08e79.js",
+        "previous": 426,
+        "size": 0,
+        "diff": -426
+      },
+      {
+        "filename": "route-challengeView.chunk.2031a.js",
+        "previous": 72190,
+        "size": 0,
+        "diff": -72190
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c7fa5.js",
+        "previous": 6616,
+        "size": 0,
+        "diff": -6616
+      },
+      {
+        "filename": "route-createChallenge.chunk.63984.js",
+        "previous": 2950,
+        "size": 0,
+        "diff": -2950
+      },
+      {
+        "filename": "route-home.chunk.1da5c.js",
+        "previous": 1820,
+        "size": 0,
+        "diff": -1820
+      },
+      {
+        "filename": "route-login.chunk.c4c29.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "8.chunk.7ed17.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "9.chunk.36405.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "10.chunk.4b2e3.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "11.chunk.bec9c.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 0,
+        "size": 5829,
+        "diff": 5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 222117,
+        "diff": 222117
+      }
+    ]
+  },
+  {
+    "timestamp": 1588800956266,
+    "files": [
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 5829,
+        "size": 0,
+        "diff": -5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 222126,
+        "size": 0,
+        "diff": -222126
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 1123, "diff": 1123 },
+      { "filename": "sw.js", "previous": 0, "size": 1121, "diff": 1121 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.95c9a.esm.js",
+        "previous": 0,
+        "size": 148023,
+        "diff": 148023
+      },
+      {
+        "filename": "polyfills.989dd.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 0,
+        "size": 131,
+        "diff": 131
+      },
+      {
+        "filename": "route-Imprint.chunk.9c067.esm.js",
+        "previous": 0,
+        "size": 424,
+        "diff": 424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 0,
+        "size": 719,
+        "diff": 719
+      },
+      {
+        "filename": "route-challengeView.chunk.f389f.esm.js",
+        "previous": 0,
+        "size": 72123,
+        "diff": 72123
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 0,
+        "size": 750,
+        "diff": 750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.fbd0a.esm.js",
+        "previous": 0,
+        "size": 6618,
+        "diff": 6618
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 0,
+        "size": 501,
+        "diff": 501
+      },
+      {
+        "filename": "route-createChallenge.chunk.dbd51.esm.js",
+        "previous": 0,
+        "size": 2944,
+        "diff": 2944
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.934d9.esm.js",
+        "previous": 0,
+        "size": 1867,
+        "diff": 1867
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.7ad80.esm.js",
+        "previous": 0,
+        "size": 2459,
+        "diff": 2459
+      },
+      {
+        "filename": "8.chunk.7ed17.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "9.chunk.36405.esm.js",
+        "previous": 0,
+        "size": 223,
+        "diff": 223
+      },
+      {
+        "filename": "10.chunk.4b2e3.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "11.chunk.bec9c.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "bundle.28c20.js",
+        "previous": 0,
+        "size": 148125,
+        "diff": 148125
+      },
+      {
+        "filename": "polyfills.84c13.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.08e79.js",
+        "previous": 0,
+        "size": 426,
+        "diff": 426
+      },
+      {
+        "filename": "route-challengeView.chunk.2031a.js",
+        "previous": 0,
+        "size": 72190,
+        "diff": 72190
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c7fa5.js",
+        "previous": 0,
+        "size": 6616,
+        "diff": 6616
+      },
+      {
+        "filename": "route-createChallenge.chunk.63984.js",
+        "previous": 0,
+        "size": 2950,
+        "diff": 2950
+      },
+      {
+        "filename": "route-home.chunk.1da5c.js",
+        "previous": 0,
+        "size": 1820,
+        "diff": 1820
+      },
+      {
+        "filename": "route-login.chunk.c4c29.js",
+        "previous": 0,
+        "size": 2533,
+        "diff": 2533
+      },
+      {
+        "filename": "8.chunk.7ed17.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "9.chunk.36405.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "10.chunk.4b2e3.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "11.chunk.bec9c.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      }
+    ]
+  },
+  {
+    "timestamp": 1588800919411,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 491, "size": 0, "diff": -491 },
+      { "filename": "sw.js", "previous": 488, "size": 0, "diff": -488 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 0,
+        "diff": -2415
+      },
+      {
+        "filename": "bundle.95c9a.esm.js",
+        "previous": 148023,
+        "size": 0,
+        "diff": -148023
+      },
+      {
+        "filename": "polyfills.989dd.esm.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 0,
+        "diff": -131
+      },
+      {
+        "filename": "route-Imprint.chunk.9c067.esm.js",
+        "previous": 424,
+        "size": 0,
+        "diff": -424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 0,
+        "diff": -719
+      },
+      {
+        "filename": "route-challengeView.chunk.f389f.esm.js",
+        "previous": 72123,
+        "size": 0,
+        "diff": -72123
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 0,
+        "diff": -750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.fbd0a.esm.js",
+        "previous": 6618,
+        "size": 0,
+        "diff": -6618
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 501,
+        "size": 0,
+        "diff": -501
+      },
+      {
+        "filename": "route-createChallenge.chunk.dbd51.esm.js",
+        "previous": 2944,
+        "size": 0,
+        "diff": -2944
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 0,
+        "diff": -1101
+      },
+      {
+        "filename": "route-home.chunk.934d9.esm.js",
+        "previous": 1867,
+        "size": 0,
+        "diff": -1867
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 0,
+        "diff": -717
+      },
+      {
+        "filename": "route-login.chunk.7ad80.esm.js",
+        "previous": 2459,
+        "size": 0,
+        "diff": -2459
+      },
+      {
+        "filename": "8.chunk.7ed17.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "9.chunk.36405.esm.js",
+        "previous": 223,
+        "size": 0,
+        "diff": -223
+      },
+      {
+        "filename": "10.chunk.4b2e3.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "11.chunk.bec9c.esm.js",
+        "previous": 224,
+        "size": 0,
+        "diff": -224
+      },
+      {
+        "filename": "bundle.28c20.js",
+        "previous": 148125,
+        "size": 0,
+        "diff": -148125
+      },
+      {
+        "filename": "polyfills.84c13.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.08e79.js",
+        "previous": 426,
+        "size": 0,
+        "diff": -426
+      },
+      {
+        "filename": "route-challengeView.chunk.2031a.js",
+        "previous": 72190,
+        "size": 0,
+        "diff": -72190
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c7fa5.js",
+        "previous": 6616,
+        "size": 0,
+        "diff": -6616
+      },
+      {
+        "filename": "route-createChallenge.chunk.63984.js",
+        "previous": 2950,
+        "size": 0,
+        "diff": -2950
+      },
+      {
+        "filename": "route-home.chunk.1da5c.js",
+        "previous": 1820,
+        "size": 0,
+        "diff": -1820
+      },
+      {
+        "filename": "route-login.chunk.c4c29.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "8.chunk.7ed17.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "9.chunk.36405.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "10.chunk.4b2e3.js",
+        "previous": 222,
+        "size": 0,
+        "diff": -222
+      },
+      {
+        "filename": "11.chunk.bec9c.js",
+        "previous": 221,
+        "size": 0,
+        "diff": -221
+      },
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 0,
+        "size": 5829,
+        "diff": 5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 222126,
+        "diff": 222126
+      }
+    ]
+  },
+  {
+    "timestamp": 1588800883647,
+    "files": [
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 5829,
+        "size": 0,
+        "diff": -5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 222126,
+        "size": 0,
+        "diff": -222126
+      },
+      { "filename": "sw-esm.js", "previous": 0, "size": 491, "diff": 491 },
+      { "filename": "sw.js", "previous": 0, "size": 488, "diff": 488 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 0,
+        "size": 2415,
+        "diff": 2415
+      },
+      {
+        "filename": "bundle.95c9a.esm.js",
+        "previous": 0,
+        "size": 148023,
+        "diff": 148023
+      },
+      {
+        "filename": "polyfills.989dd.esm.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 0,
+        "size": 131,
+        "diff": 131
+      },
+      {
+        "filename": "route-Imprint.chunk.9c067.esm.js",
+        "previous": 0,
+        "size": 424,
+        "diff": 424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 0,
+        "size": 719,
+        "diff": 719
+      },
+      {
+        "filename": "route-challengeView.chunk.f389f.esm.js",
+        "previous": 0,
+        "size": 72123,
+        "diff": 72123
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 0,
+        "size": 750,
+        "diff": 750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.fbd0a.esm.js",
+        "previous": 0,
+        "size": 6618,
+        "diff": 6618
+      },
+      {
+        "filename": "route-createChallenge.chunk.a6cc3.css",
+        "previous": 0,
+        "size": 501,
+        "diff": 501
+      },
+      {
+        "filename": "route-createChallenge.chunk.dbd51.esm.js",
+        "previous": 0,
+        "size": 2944,
+        "diff": 2944
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 0,
+        "size": 1101,
+        "diff": 1101
+      },
+      {
+        "filename": "route-home.chunk.934d9.esm.js",
+        "previous": 0,
+        "size": 1867,
+        "diff": 1867
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 0,
+        "size": 717,
+        "diff": 717
+      },
+      {
+        "filename": "route-login.chunk.7ad80.esm.js",
+        "previous": 0,
+        "size": 2459,
+        "diff": 2459
+      },
+      {
+        "filename": "8.chunk.7ed17.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "9.chunk.36405.esm.js",
+        "previous": 0,
+        "size": 223,
+        "diff": 223
+      },
+      {
+        "filename": "10.chunk.4b2e3.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "11.chunk.bec9c.esm.js",
+        "previous": 0,
+        "size": 224,
+        "diff": 224
+      },
+      {
+        "filename": "bundle.28c20.js",
+        "previous": 0,
+        "size": 148125,
+        "diff": 148125
+      },
+      {
+        "filename": "polyfills.84c13.js",
+        "previous": 0,
+        "size": 2012,
+        "diff": 2012
+      },
+      {
+        "filename": "route-Imprint.chunk.08e79.js",
+        "previous": 0,
+        "size": 426,
+        "diff": 426
+      },
+      {
+        "filename": "route-challengeView.chunk.2031a.js",
+        "previous": 0,
+        "size": 72190,
+        "diff": 72190
+      },
+      {
+        "filename": "route-challengesOverview.chunk.c7fa5.js",
+        "previous": 0,
+        "size": 6616,
+        "diff": 6616
+      },
+      {
+        "filename": "route-createChallenge.chunk.63984.js",
+        "previous": 0,
+        "size": 2950,
+        "diff": 2950
+      },
+      {
+        "filename": "route-home.chunk.1da5c.js",
+        "previous": 0,
+        "size": 1820,
+        "diff": 1820
+      },
+      {
+        "filename": "route-login.chunk.c4c29.js",
+        "previous": 0,
+        "size": 2533,
+        "diff": 2533
+      },
+      {
+        "filename": "8.chunk.7ed17.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "9.chunk.36405.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      },
+      {
+        "filename": "10.chunk.4b2e3.js",
+        "previous": 0,
+        "size": 222,
+        "diff": 222
+      },
+      {
+        "filename": "11.chunk.bec9c.js",
+        "previous": 0,
+        "size": 221,
+        "diff": 221
+      }
+    ]
+  },
+  {
+    "timestamp": 1588800817996,
+    "files": [
+      { "filename": "sw-esm.js", "previous": 491, "size": 0, "diff": -491 },
+      { "filename": "sw.js", "previous": 488, "size": 0, "diff": -488 },
+      {
+        "filename": "bundle.e09dd.css",
+        "previous": 2415,
+        "size": 0,
+        "diff": -2415
+      },
+      {
+        "filename": "bundle.f28e9.esm.js",
+        "previous": 141430,
+        "size": 0,
+        "diff": -141430
+      },
+      {
+        "filename": "polyfills.7484f.esm.js",
+        "previous": 2012,
+        "size": 0,
+        "diff": -2012
+      },
+      {
+        "filename": "route-Imprint.chunk.da4b7.css",
+        "previous": 131,
+        "size": 0,
+        "diff": -131
+      },
+      {
+        "filename": "route-Imprint.chunk.009cb.esm.js",
+        "previous": 424,
+        "size": 0,
+        "diff": -424
+      },
+      {
+        "filename": "route-challengeView.chunk.76489.css",
+        "previous": 719,
+        "size": 0,
+        "diff": -719
+      },
+      {
+        "filename": "route-challengeView.chunk.0d302.esm.js",
+        "previous": 67857,
+        "size": 0,
+        "diff": -67857
+      },
+      {
+        "filename": "route-challengesOverview.chunk.cbaff.css",
+        "previous": 750,
+        "size": 0,
+        "diff": -750
+      },
+      {
+        "filename": "route-challengesOverview.chunk.fda47.esm.js",
+        "previous": 2348,
+        "size": 0,
+        "diff": -2348
+      },
+      {
+        "filename": "route-createChallenge.chunk.eb6ba.css",
+        "previous": 468,
+        "size": 0,
+        "diff": -468
+      },
+      {
+        "filename": "route-createChallenge.chunk.54765.esm.js",
+        "previous": 981,
+        "size": 0,
+        "diff": -981
+      },
+      {
+        "filename": "route-home.chunk.bf69f.css",
+        "previous": 1101,
+        "size": 0,
+        "diff": -1101
+      },
+      {
+        "filename": "route-home.chunk.e9d21.esm.js",
+        "previous": 1866,
+        "size": 0,
+        "diff": -1866
+      },
+      {
+        "filename": "route-login.chunk.a78a3.css",
+        "previous": 717,
+        "size": 0,
+        "diff": -717
+      },
+      {
+        "filename": "route-login.chunk.be42d.esm.js",
+        "previous": 2460,
+        "size": 0,
+        "diff": -2460
+      },
+      {
+        "filename": "bundle.766e1.js",
+        "previous": 141510,
+        "size": 0,
+        "diff": -141510
+      },
+      {
+        "filename": "polyfills.b96b2.js",
+        "previous": 2013,
+        "size": 0,
+        "diff": -2013
+      },
+      {
+        "filename": "route-Imprint.chunk.63d76.js",
+        "previous": 426,
+        "size": 0,
+        "diff": -426
+      },
+      {
+        "filename": "route-challengeView.chunk.3bd78.js",
+        "previous": 67921,
+        "size": 0,
+        "diff": -67921
+      },
+      {
+        "filename": "route-challengesOverview.chunk.1d615.js",
+        "previous": 2346,
+        "size": 0,
+        "diff": -2346
+      },
+      {
+        "filename": "route-createChallenge.chunk.f6320.js",
+        "previous": 979,
+        "size": 0,
+        "diff": -979
+      },
+      {
+        "filename": "route-home.chunk.d58d7.js",
+        "previous": 1818,
+        "size": 0,
+        "diff": -1818
+      },
+      {
+        "filename": "route-login.chunk.a22d2.js",
+        "previous": 2533,
+        "size": 0,
+        "diff": -2533
+      },
+      {
+        "filename": "ssr-bundle.a5bb5.css",
+        "previous": 0,
+        "size": 5829,
+        "diff": 5829
+      },
+      {
+        "filename": "ssr-bundle.js",
+        "previous": 0,
+        "size": 222126,
+        "diff": 222126
+      }
+    ]
+  },
+  {
     "timestamp": 1587057030448,
     "files": [
       {
