@@ -27,8 +27,6 @@ const AuthenticatedChallengesOverview = () => {
   const { t } = useTranslation();
 
   const { isLoading, isError, data } = useDatabaseEntry(userId);
-  const allChallenges = data[0];
-
   if (isLoading) {
     return <p class={style.root}>{t('loadingYourChallenges')}</p>;
   }
@@ -42,6 +40,7 @@ const AuthenticatedChallengesOverview = () => {
       </p>
     );
   }
+  const { challenges: allChallenges } = data[0];
 
   return (
     <div class={style.root}>

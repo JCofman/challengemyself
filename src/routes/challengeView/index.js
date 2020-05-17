@@ -35,7 +35,6 @@ const AuthenticatedChallengeView = () => {
     '9c2b0b52027502b5e790640d080938e6efe192ddef317faaec51b8d8bbb15b7e';
   const challengeIdUrl = window.location.pathname.slice(1); // because it starts with '/'
   const { isLoading, isError, data } = useDatabaseEntry(challengeIdUrl);
-  const [duration, name, createdDate] = data;
 
   useEffect(() => {
     const tiltElem = document.querySelector('[data-tilt]');
@@ -53,15 +52,21 @@ const AuthenticatedChallengeView = () => {
         });
     }
     // remove event listeners when component is removed
-    return () => tiltElem.vanillaTilt.destroy();
+
+    return () => tiltElem && tiltElem.vanillaTilt.destroy();
   }, [data]);
 
-  if (isLoading) {
+  if (isLoading || data.length === 0) {
     return <p>{t('loadingYourChallenge')}</p>;
   }
   if (isError) {
     return <p>{t('error')}</p>;
   }
+
+  const challenge = data.reduce((prev, currentChallengeValue) => {
+    return { ...prev, ...currentChallengeValue };
+  }, {});
+  const { duration, name, startDate } = challenge;
 
   return (
     <div class={style.root}>
@@ -79,7 +84,7 @@ const AuthenticatedChallengeView = () => {
           <div class={style.challenge__title}>
             {name ? name.toUpperCase() : '…'}
           </div>
-          {calcDaysToGo(duration, createdDate) === 0 &&
+          {calcDaysToGo(duration, startDate) === 0 &&
           typeof window !== 'undefined' ? (
             <lottie-player
               class={style.challenge__trophyAnimation}
@@ -92,15 +97,15 @@ const AuthenticatedChallengeView = () => {
           ) : (
             <>
               <div class={style.challenge__daysToGo}>
-                {duration && createdDate
-                  ? calcDaysToGo(duration, createdDate)
+                {duration && startDate
+                  ? calcDaysToGo(duration, startDate)
                   : 'XX'}
               </div>
               <div class={style.challenge__daysToGoDesc}>DAYS TO GO</div>
             </>
           )}
         </div>
-        {calcDaysToGo(duration, createdDate) === 0 && (
+        {calcDaysToGo(duration, startDate) === 0 && (
           <div class={style.challenge__done}>
             <Trans i18nKey="challengeFinished" duration={duration}>
               Nice! You finished your {{ duration }} days challenge!

@@ -117,7 +117,7 @@ const AuthenticatedCreateChallenge = () => {
                     // eslint-disable-next-line no-alert
                     alert('This browser does not support desktop notification');
                   } else if (Notification.permission === 'granted') {
-                    setNotify(!shouldNotify);
+                    setNotify(true);
                     messaging.getToken().then((currentToken) => {
                       const userID = auth.user.uid;
                       // add notificationToken
@@ -129,7 +129,9 @@ const AuthenticatedCreateChallenge = () => {
                   } else {
                     Notification.requestPermission((result) => {
                       if (result === 'granted') {
-                        setNotify(!shouldNotify);
+                        setNotify(true);
+                      } else {
+                        setNotify(false);
                       }
                       localStorage.setItem('Notifications-Permission', result);
                     });
@@ -141,15 +143,9 @@ const AuthenticatedCreateChallenge = () => {
           </div>
 
           {shouldNotify && (
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <div>
-                <label for="hour">{t('time')}</label>
+            <div class={style.form__notify}>
+              <label for="hour">
+                {t('time')}
                 <select
                   id="hour"
                   name="hour"
@@ -162,9 +158,9 @@ const AuthenticatedCreateChallenge = () => {
                     return <option value={val}>{val}:00</option>;
                   })}
                 </select>
-              </div>
-              <div>
-                <label for="timezone">{t('timeZone')}</label>
+              </label>
+              <label for="timezone">
+                {t('timeZone')}
                 <select
                   id="timezone"
                   name="timezone"
@@ -177,7 +173,7 @@ const AuthenticatedCreateChallenge = () => {
                     return <option value={val.value}>{val.label}</option>;
                   })}
                 </select>
-              </div>
+              </label>
             </div>
           )}
 
