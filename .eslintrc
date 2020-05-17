@@ -21,6 +21,8 @@
     "react/jsx-no-bind": "off",
     "react/jsx-indent-props": "off"
   },
+  "ignorePatterns": ["functions/*"],
+
   "env": {
     "browser": true
   }

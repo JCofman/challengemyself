@@ -51,7 +51,8 @@ export const useDatabaseEntry = (entry) => {
           // Push the object to the array
           // If you also need to store the unique key from firebase,
           // You can use array.push({ ...el.val(), key: el.key });
-          array.push(el.val());
+          const val = el.val();
+          array.push({ [el.key]: val });
         });
         dispatch({ type: 'FETCH_DATABASE_ENTRY_SUCCESS', payload: array });
       },

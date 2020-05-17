@@ -1,3 +1,4 @@
+'use strict';
 Object.defineProperty(exports, '__esModule', { value: true });
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
@@ -21,7 +22,9 @@ exports.sendChallengeNotification = functions.https.onRequest(
           // Push the object to the array
           // If you also need to store the unique key from firebase,
           // You can use array.push({ ...el.val(), key: el.key });
-          user.push(el.val());
+          user.push(
+            Object.assign(Object.assign({}, el.val()), { key: el.key })
+          );
         });
       });
     // filter only those who have notifcation tokens enabled
@@ -33,9 +36,14 @@ exports.sendChallengeNotification = functions.https.onRequest(
     });
     const filterActiveAndToBeNotifiedChallenges = (challenge) => {
       const currentHours = new Date().getHours();
+      const isStillRunning =
+        exports.calcDaysToGo(challenge.duration, challenge.startDate) > 0
+          ? true
+          : false;
       if (
         challenge.shouldNotify === true &&
-        currentHours === challenge.notifcationTime
+        currentHours === parseInt(challenge.notificationTime) &&
+        isStillRunning
       ) {
         return true;
       }
@@ -58,13 +66,14 @@ exports.sendChallengeNotification = functions.https.onRequest(
     );
     // Check if there are any device tokens.
     if (userAndChallengesToBeNotified.length === 0) {
-      return console.log('There are no notification to send.');
+      console.log('There are no notification to send.');
+      return res.send('There are no notification to send.');
     }
     userAndChallengesToBeNotified.forEach((user) => {
       const tokens = Object.keys(user.notificationTokens);
-      // const getDeviceTokensPromise = admin
-      //   .database()
-      //   .ref(`${user}/notificationTokens`);
+      const getDeviceTokensPromise = admin
+        .database()
+        .ref(`${user.key}/notificationTokens`);
       user.challenges.forEach(async (challenge) => {
         const payload = {
           notification: {
@@ -92,16 +101,18 @@ exports.sendChallengeNotification = functions.https.onRequest(
               error.code === 'messaging/invalid-registration-token' ||
               error.code === 'messaging/registration-token-not-registered'
             ) {
-              // tokensToRemove.push(
-              //   getDeviceTokensPromise.ref.child(tokens[index]).remove()
-              // );
+              console.log('remove the following token' + tokens[index]);
+              tokensToRemove.push(
+                getDeviceTokensPromise.ref.child(tokens[index]).remove()
+              );
             }
           }
         });
+        console.log('tokens: to remove' + tokensToRemove);
         return Promise.all(tokensToRemove);
       });
     });
-    res.send('Send out notifications!\n\n');
+    return res.send('Send out notifications!\n\n');
   }
 );
 /**

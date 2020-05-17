@@ -57,3 +57,23 @@
   display: flex;
   flex-direction: 'column';
 }
+
+.form__notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form__notify label {
+  padding: 1rem;
+}
+.form__notify label select {
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 520px) {
+  .form__notify {
+    flex-direction: column;
+  }
+}
