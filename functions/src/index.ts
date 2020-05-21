@@ -71,6 +71,8 @@ exports.sendChallengeNotification = functions.https.onRequest(
     }
     userAndChallengesToBeNotified.forEach((user) => {
       const tokens = Object.keys(user.notificationTokens);
+      console.log(user);
+      console.log('USER KEY: ' + user.key);
       const getDeviceTokensPromise = admin
         .database()
         .ref(`${user.key}/notificationTokens`);

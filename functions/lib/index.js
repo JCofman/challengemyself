@@ -37,13 +37,11 @@ exports.sendChallengeNotification = functions.https.onRequest(
     const filterActiveAndToBeNotifiedChallenges = (challenge) => {
       const currentHours = new Date().getHours();
       const isStillRunning =
-        exports.calcDaysToGo(challenge.duration, challenge.startDate) > 0
-          ? true
-          : false;
+        exports.calcDaysToGo(challenge.duration, challenge.startDate) > 0;
       if (
         challenge.shouldNotify === true &&
-        currentHours === parseInt(challenge.notificationTime) &&
-        isStillRunning
+        currentHours === parseInt(challenge.notificationTime, 10) &&
+        isStillRunning === true
       ) {
         return true;
       }
@@ -71,6 +69,8 @@ exports.sendChallengeNotification = functions.https.onRequest(
     }
     userAndChallengesToBeNotified.forEach((user) => {
       const tokens = Object.keys(user.notificationTokens);
+      console.log(user);
+      console.log('USER KEY: ' + user.key);
       const getDeviceTokensPromise = admin
         .database()
         .ref(`${user.key}/notificationTokens`);

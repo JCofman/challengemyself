@@ -8,7 +8,7 @@ import { useServiceWorker } from 'react-hook-use-service-worker';
 import firebase, { useAuth } from '../../hooks/useAuth';
 import { timeOptions, timeZones } from '../../utils';
 import style from './createChallenge.css';
-const messaging = firebase.messaging();
+const messaging = typeof window !== 'undefined' ? firebase.messaging() : null;
 
 const UnauthenticatedCreateChallenge = () => {
   return (
