@@ -6,11 +6,13 @@ import { useState, useEffect, useContext } from 'preact/hooks';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
-import 'firebase/messaging';
+
 // Add your Firebase credentials
 let googleProvider;
 let authContext;
 if (typeof window !== 'undefined') {
+  import('firebase/messaging').then(() => {});
+
   firebase.initializeApp({
     apiKey: 'AIzaSyBhUdUbAfkxCcNSqP14LE4uwQ2Bo9TNqRk',
     authDomain: 'challengemyself-f65a8.firebaseapp.com',

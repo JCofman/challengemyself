@@ -10,9 +10,9 @@
     "validate": "npm-run-all --parallel check-format lint test",
     "check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|json)\"",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
-    "build": "preact build --no-prerender",
+    "build": "preact build --sw",
     "serve": "preact build && preact serve",
-    "serve:locally": " preact serve",
+    "serve:locally": "serve ./build",
     "dev": "preact watch --https --sw --refresh --host=localhost",
     "deploy:firebase:function": "firebase deploy --only functions --project challengemyself-f65a8",
     "lint": "eslint src",
@@ -55,6 +55,7 @@
     "react-hook-use-service-worker": "^0.2.1",
     "react-i18next": "^11.4.0",
     "react-icons": "^3.10.0",
+    "serve": "^11.3.0",
     "vanilla-tilt": "^1.7.0"
   },
   "jest": {
